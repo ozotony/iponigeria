@@ -1,0 +1,339 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="author" content="" />
+<meta name="copyright" content="" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />	
+<link rel="Shortcut Icon" href="favicon.ico" />
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
+<link href="stylesheets/iponigeria.css?488E63B4AF2CA89C158F7A9BCE86B75C" media="all" rel="stylesheet" type="text/css" />
+<link href="stylesheets/error.css?488E63B4AF2CA89C158F7A9BCE86B75C" media="all" rel="stylesheet" type="text/css" />
+<script src="javascripts/jquery-2.1.1.min.js" type="text/javascript"></script>
+<script src="javascripts/knockout-2.2.0.js" type="text/javascript"></script>
+
+<script src="javascripts/Login.js" type="text/javascript"></script>
+<script src="javascripts/treemenu.js?488E63B4AF2CA89C158F7A9BCE86B75C" type="text/javascript"></script>
+
+<link rel="stylesheet" href="styles/style.css" type="text/css" />
+<link rel="stylesheet" href="stylesheets/iponigeria.css" type="text/css" />
+
+<link rel="stylesheet" href="stylesheets/cAdmin.css" type="text/css" />
+
+<title>The Commercial Law Department, Trademarks Patents and Designs Registry, Ministry of Trade and Investment</title>
+<script type="text/javascript" src="js/treemenu.js"></script>
+<script type="text/javascript">
+ $(document).ready(function () {
+
+          
+            ko.applyBindings(new AppAgentModel());
+         
+
+        });
+
+</script>
+</head>
+
+<body>
+ 
+<div class="header">
+  <div class="wrapper">
+    <div class="nav">
+      <ul>
+      <li class="home"><a href="Index.html">Home</a></li>
+    <li><a href="About.html">About Us</a></li>
+    <li><a href="Services.html">Services</a></li>
+    <li><a href="Online_Service.html">Online Services</a></li>
+    <li><a href="NewsRoom.html">News Room</a></li>
+    <li><a href="Accreditation.html">Accreditation</a></li>
+    <li><a href="Contact.html">Contact Us</a></li>
+           
+
+      </ul>
+    </div>
+    <div class="upper">
+      <a href="" class="logo">IPONigeria</a>
+      <div class="log">
+        
+        
+        <div class="admin">
+        
+ 
+        <p><span>Welcome </span> <span data-bind="text:Agent_Name"> </span> </p>
+ 
+  <strong> Account Type:</strong>Corporate<br/>
+ <strong>         User Level :</strong> Main Agent<br/>
+
+		
+          <strong>Agent Number:<span data-bind="text:Sys_ID">  </span> </strong>
+		 
+
+
+       <strong>
+       Account Status Level</strong>:Approved</p>
+      </p>
+    
+          <p><a href="#" data-bind="click :$root.LogOut2" class="btn">Sign Out</a></p>
+        </div>
+        
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+ <!--/header-->
+
+
+
+
+<div class="content">
+  <div class="wrapper">
+  
+   
+
+<div class="dashnav">
+      <p class="left">Dashboard</p>
+      
+      <div class="dashlink">
+      <ul>
+        <li><a href="/userarea/dashboard">Home</a></li>
+         <li><a href="/userarea/userguide">User's Guide</a></li>
+       
+        
+          <li><a href="/userarea/editAccount">Edit My Profile</a></li>
+        <li> <a href="/userarea/mysetting">Change Password</a></li>
+        <li><a href="/userarea/myagents">My users</a></li>
+    
+    
+          
+           <li><a href="/userarea/mysetting">Change Password</a></li>
+      </li>
+ 
+      
+    <li><a href="/userarea/paymentoptions">payment history</a></li> 
+      <li><a href="/userarea/approvedpayment">File Online Application</a></li>
+      <li><a href="/userarea/RequestStatus">Online Request History</a></li>
+       <li>   
+       
+       </li> 
+      
+        </ul>
+      </div>
+    </div>
+
+   
+   
+   
+   <table width="100%" border="0" cellspacing="0" cellpadding="4" align="left">
+                          
+                         
+                          
+                          <tr>
+                            <td align="left"></td>
+                          </tr>
+                          <tr>
+                            <td><table width="100%" border="0" cellspacing="0" cellpadding="4" align="left">
+                          
+                         
+                          <tr>
+                            <td align="left">&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td align="left"><strong class="menuText" style="color:#060">DESIGN  FEE SCHEDULE<br>
+                              <br>
+                            </strong></td>
+                          </tr>
+                          <tr>
+                            <td><table width="100%" border="0" cellspacing="0" cellpadding="2">
+                              <tr>
+                                <td width="10">&nbsp;</td>
+                                <td>
+                                
+                                <div class="formatDiv">
+                                <table width="100%" border="0" cellspacing="1" cellpadding="2">
+                                <tr align="center">
+                                    <td width="78" height="29">&nbsp;&nbsp;<strong>SN</strong></td>
+                                    <td width="110"><strong>&nbsp;PAYMENT CODE</strong></td>
+                                <td width="415">&nbsp;&nbsp;&nbsp;<strong>FEE DESCRIPTION</strong></td>
+                                  <td width="200"   align="center"><strong>SERVICE FEES</strong></td>
+                                  <td width="200" align="center"><strong>TOTAL AMOUNT </strong></td>                                </tr>
+                                <tr  height="35px"> 
+                                  <td>&nbsp;&nbsp;1</td>
+                                  <td>&nbsp;&nbsp;D001</td>
+                                  <td>&nbsp;D001 (Application for Design Search)</td>
+                                  
+                                   <td align="center">&nbsp;&nbsp;NGN 1,400.00</td>
+                                 
+                                  <td align="center">&nbsp;&nbsp;NGN 4,400.00</td>
+                                 </tr>
+                                <tr  height="35px"> 
+                                  <td>&nbsp;&nbsp;2</td>
+                                  <td>&nbsp;&nbsp;D002</td>
+                                  <td>&nbsp;D002 (Registration of Designs (Non- Textiles))</td>
+                                  
+                                   <td align="center">&nbsp;&nbsp;NGN 2,900.00</td>
+                                 
+                                  <td align="center">&nbsp;&nbsp;NGN 22,900.00</td>
+                                 </tr>
+                                <tr  height="35px"> 
+                                  <td>&nbsp;&nbsp;3</td>
+                                  <td>&nbsp;&nbsp;D003</td>
+                                  <td>&nbsp;D003 (Registration of Designs (Textile)</td>
+                                  
+                                   <td align="center">&nbsp;&nbsp;NGN 2,900.00</td>
+                                 
+                                  <td align="center">&nbsp;&nbsp;NGN 24,900.00</td>
+                                 </tr>
+                                <tr  height="35px"> 
+                                  <td>&nbsp;&nbsp;4</td>
+                                  <td>&nbsp;&nbsp;D005</td>
+                                  <td>&nbsp;D005 (Renewal of Non-Textile Design)</td>
+                                  
+                                   <td align="center">&nbsp;&nbsp;NGN 2,900.00</td>
+                                 
+                                  <td align="center">&nbsp;&nbsp;NGN 12,900.00</td>
+                                 </tr>
+                                <tr  height="35px"> 
+                                  <td>&nbsp;&nbsp;5</td>
+                                  <td>&nbsp;&nbsp;D006</td>
+                                  <td>&nbsp;D006 (Renewal of Textile Design certificate)</td>
+                                  
+                                   <td align="center">&nbsp;&nbsp;NGN 2,900.00</td>
+                                 
+                                  <td align="center">&nbsp;&nbsp;NGN 20,900.00</td>
+                                 </tr>
+                                <tr  height="35px"> 
+                                  <td>&nbsp;&nbsp;6</td>
+                                  <td>&nbsp;&nbsp;D007</td>
+                                  <td>&nbsp;D007 (CTC of certificate of Industrial Design)</td>
+                                  
+                                   <td align="center">&nbsp;&nbsp;NGN 2,200.00</td>
+                                 
+                                  <td align="center">&nbsp;&nbsp;NGN 8,200.00</td>
+                                 </tr>
+                                <tr  height="35px"> 
+                                  <td>&nbsp;&nbsp;7</td>
+                                  <td>&nbsp;&nbsp;D008</td>
+                                  <td>&nbsp;D008 (CTC of other Design forms or document)</td>
+                                  
+                                   <td align="center">&nbsp;&nbsp;NGN 1,900.00</td>
+                                 
+                                  <td align="center">&nbsp;&nbsp;NGN 4,900.00</td>
+                                 </tr>
+                                <tr  height="35px"> 
+                                  <td>&nbsp;&nbsp;8</td>
+                                  <td>&nbsp;&nbsp;D009</td>
+                                  <td>&nbsp;D009 (Alteration in the Designs Register)</td>
+                                  
+                                   <td align="center">&nbsp;&nbsp;NGN 1,900.00</td>
+                                 
+                                  <td align="center">&nbsp;&nbsp;NGN 4,900.00</td>
+                                 </tr>
+                                <tr  height="35px"> 
+                                  <td>&nbsp;&nbsp;9</td>
+                                  <td>&nbsp;&nbsp;D010</td>
+                                  <td>&nbsp;D010 (Correction of Design clerical error)</td>
+                                  
+                                   <td align="center">&nbsp;&nbsp;NGN 1,900.00</td>
+                                 
+                                  <td align="center">&nbsp;&nbsp;NGN 3,900.00</td>
+                                 </tr>
+                                <tr  height="35px"> 
+                                  <td>&nbsp;&nbsp;10</td>
+                                  <td>&nbsp;&nbsp;D011</td>
+                                  <td>&nbsp;D011 (Amendment of Design documents)</td>
+                                  
+                                   <td align="center">&nbsp;&nbsp;NGN 1,900.00</td>
+                                 
+                                  <td align="center">&nbsp;&nbsp;NGN 3,900.00</td>
+                                 </tr>
+                                <tr  height="35px"> 
+                                  <td>&nbsp;&nbsp;11</td>
+                                  <td>&nbsp;&nbsp;D012</td>
+                                  <td>&nbsp;D012 (Assignment/Merger of Industrial Designs/Patents)</td>
+                                  
+                                   <td align="center">&nbsp;&nbsp;NGN 2,900.00</td>
+                                 
+                                  <td align="center">&nbsp;&nbsp;NGN 12,900.00</td>
+                                 </tr>
+                              
+                                </table>
+                                </div>
+                                </td>
+                                <td width="10">&nbsp;</td>
+                              </tr>
+                            </table></td>
+                          </tr>
+                          
+                                                    
+                          <tr>
+                            <td><table width="100%" border="0" cellspacing="0" cellpadding="2">
+                              
+                            </table></td>
+                          </tr>
+                          
+                        </table></td>
+                      </tr>
+                      
+                          <tr>
+                            <td align="left">&nbsp;</td>
+                          </tr>
+                          
+                                                    
+                          <tr>
+                            <td><table width="100%" border="0" cellspacing="0" cellpadding="2">
+                              
+                            </table></td>
+                          </tr>
+                          
+                        </table>
+                        
+                        
+                        
+   
+    
+
+    </p>
+  </div>
+  
+  </div>
+  
+  
+
+<!--/wrapper--><!--/content-->
+
+
+<div class="footer">
+  <div class="wrapper">
+    <a href="" class="accredited">Get Accredited</a>
+    
+    <div class="footnote">
+      <div class="left">
+        <ul>
+          <li><a href="/pages/129?related=129">About IPO NIGERIA</a></li>
+          <li><a href="/pages/139?related=139">Terms & Conditions</a></li>
+          <li><a href="/pages/138?related=138">Privacy Policy</a></li>
+          
+        </ul>
+      </div>
+     
+      <div class="right">
+
+        <p>The Commercial Law Department, Trademarks Patents and Designs Registry, Ministry of Trade and Investment</p>
+      </div>
+  
+      <div class="right" align="right"> <br />
+
+        <p> </p>
+      </div>
+    </div>
+  </div>
+</div>
+ <!--/footer-->
+
+
+</body>
+</html> 

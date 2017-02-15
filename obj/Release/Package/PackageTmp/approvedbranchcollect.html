@@ -1,0 +1,304 @@
+﻿
+<link href="stylesheets/iponigeria.css?488E63B4AF2CA89C158F7A9BCE86B75C" media="all" rel="stylesheet" type="text/css" />
+<div class="header">
+  <div class="wrapper">
+    <div class="nav">
+      <!--<ul>
+      <li class="home"><a href="Index.html">Home</a></li>
+    <li><a href="About.html">About Us</a></li>
+    <li><a href="Services.html">Services</a></li>
+    <li><a href="Online_Service.html">Online Services</a></li>
+    <li><a href="NewsRoom.html">News Room</a></li>
+    <li><a href="Accreditation.html">Accreditation</a></li>
+    <li><a href="Contact.html">Contact Us</a></li>
+           
+
+      </ul>-->
+    </div>
+    <div class="upper">
+      <a href="" class="logo">IPONigeria</a>
+      <div class="log">
+        
+        
+        <div class="admin">
+        
+ 
+         <p><span>Welcome </span> <span data-bind="text:Agent_Name"> </span> </p>
+ 
+  <strong> Account Type:</strong>Corporate<br/>
+ <strong>         User Level :</strong> Main Agent<br/>
+
+		
+          <strong>Agent Number:<span data-bind="text:Sys_ID">  </span> </strong>
+		 
+
+
+       <strong>
+       Account Status Level</strong>:Approved</p>
+      </p>
+    
+          <p><a href="#" data-bind="click :$root.LogOut2" class="btn">Sign Out</a></p>
+        </div>
+        
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+ <!--/header-->
+
+
+
+
+<div class="content">
+  <div class="wrapper">
+  
+   
+
+<div class="dashnav">
+      <p class="left">Dashboard</p>
+      
+      <div class="dashlink">
+      <ul>
+      
+ 
+      
+    <li><a href="#">payment history</a></li> 
+      <li><a href="#">File Online Application</a></li>
+      <li><a href="#">Online Request History</a></li>
+       <li>   
+       
+       </li> 
+      
+        </ul>
+      </div>
+    </div>
+ <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    
+                      <tr>
+                        <td><table width="100%" border="0" cellspacing="0" cellpadding="4" align="left">
+                          
+                         
+                         <tr>
+                            <td>
+                            <div class="formatDiv">
+                        <form action="/userarea/approvedbranchcollect" method="post" enctype="multipart/form-data" name="addcats" id="addcats">
+                          <table width="100%" border="0" align="center" cellpadding="3" cellspacing="1">
+                            <tr>
+                              <td colspan="2" valign="top"><strong>Search For Approved Transaction</strong></td>
+                              <td width="306">
+                                  <input name="searchitem" ng-model="searchText" type="text" class="longtextbox" id="searchitem" />                              </td>
+                            </tr>
+                            <tr>
+                             <td width="104" align="right">&nbsp;</td>
+                              <td width="128" align="center">&nbsp;</td>
+                              <td><input name="Submit" ng-click="Update2();" type=" submit" class="orange-brd" value="Submit" /></td>
+                            </tr>
+                          </table>
+                              </form>
+                              </div>
+                              
+                            <table width="100%" border="0" cellspacing="0" cellpadding="2">
+                              <tr>
+                                <td>&nbsp;</td>
+                                <td><strong class="menuText" style="color:#060">APPROVED PAYMENT FOR FILING APPLICATIONS</strong></td>
+                                <td>&nbsp;</td>
+                              </tr>
+                              <tr>
+                                <td width="10">&nbsp;</td>
+                                <td>
+                                    <!--<ul>
+                                        <li class="pager" data-bind="css: {'disabled': !previousPageEnabled()}">
+                                            <a href="#" data-bind="click: previousPage">Previous</a>
+                                        </li>
+                                        <li class="pager" data-bind="css: {'disabled': !nextPageEnabled()}">
+                                            <a href="#" data-bind="click: nextPage">Next</a>
+                                        </li>
+                                    </ul>-->
+                                <div class="formatDiv">
+
+
+                                    <table width="100%" border="0" cellspacing="1" cellpadding="4" class="table" align="center">
+                                        <thead>
+                                            <tr>
+                                                <th>
+                                                    Serial No
+
+                                                </th>
+                                                <th>Reference ID</th>
+
+                                                <th>Applicant's Full Name</th>
+                                                <th>Agent Name</th>
+                                                <th>Payment Date</th>
+                                                <th>Payment For</th>
+                                                <th>Amount</th>
+                                                <th>Payment Code</th>
+                                                <th></th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr ng-repeat="user in BranchCollect|offset: currentPage*itemsPerPage |limitTo: itemsPerPage| filter:searchText">
+                                                <td>{{user.Serial_No}}</td>
+                                                <td>{{user.TransactionID}}</td>
+                                                <td>{{user.CustomerFirstname}}</td>
+                                                <td>{{user.Agent_name}}</td>
+
+                                                <td>{{user.TransactionDate}}</td>
+
+                                                <td>{{user.ItemDescription}}</td>
+
+                                                <td>{{user.ItemAmount|currency:""}}</td>
+
+                                                <td>{{user.paymentcode}}</td>
+                                                <td>
+                                                    <a href="#" ng-click="EditRow(user);$event.preventDefault(); $event.stopPropagation();">File Online Form</a>
+                                                </td>
+
+                                            </tr>
+
+                                        </tbody>
+                                        <tfoot>
+                                        </tfoot>
+                                        <td colspan="3">
+                                            <div class="pagination">
+                                                <ul>
+                                                    <li ng-class="prevPageDisabled()">
+                                                        <a href="" ng-click="prevPage(); $event.preventDefault(); $event.stopPropagation();">« Prev</a>
+                                                    </li>
+                                                    <li ng-repeat="n in range()"
+                                                        ng-class="{active: n == currentPage}" ng-click="setPage(n)">
+                                                        <a href="#">{{n+1}}</a>
+                                                    </li>
+                                                    <li ng-class="nextPageDisabled()">
+                                                        <a href="" ng-click="nextPage(); $event.preventDefault(); $event.stopPropagation();">Next »</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </td>
+
+                                        </tfoot>
+
+                                    </table>
+                                   
+                                <!--<table width="100%" border="0" cellspacing="1" cellpadding="4" align="center">
+<thead>
+    <tr>
+      <th>Serial Number</th>
+        <th>Reference ID</th>
+         <th>Applicant's Full Name</th>
+          <th>Agent Name</th>
+        <th>Payment Date</th>
+         <th>Payment For</th>
+         <th>Amount</th>
+         <th>Payment Code</th>
+        <th data-bind="visible:vvisible2()">Applicant Email</th>
+        <th data-bind="visible:vvisible2()">Applicant Gsm</th>
+        <th data-bind="visible:vvisible2()">Customer Gsm</th>
+        <th data-bind="visible:vvisible2()">Customer Email</th>
+         <th>  </th>
+      
+    <th> </th>
+
+    
+    </tr>
+    </thead>
+<tbody  data-bind="foreach: pagedItems" >
+
+
+  
+    <tr>
+   <td data-bind="text: Serial_No"></td>
+        <td data-bind="text: TransactionID"></td>
+
+         <td data-bind="text: CustomerFirstname"></td>
+
+          <td data-bind="text: Agent_name"></td>
+
+        <td data-bind="text: TransactionDate"></td>
+        
+        <td data-bind="text: ItemDescription"></td>
+        
+         <td data-bind="text: ItemAmount"></td>
+         
+          <td data-bind="text: paymentcode"></td>
+        <td data-bind="text: ApplicantEmail,visible:$root.vvisible2()"></td>
+
+        <td data-bind="text: ApplicantPhone,visible:$root.vvisible2()"></td>
+
+        <td data-bind="text: CustomerGSM,visible:$root.vvisible2()"></td>
+
+        <td data-bind="text: CustomerEmail,visible:$root.vvisible2()"></td>
+      
+           <td> <button  data-bind="click: $root.Updaterec">Online Form</button></td>
+       
+
+     
+       
+    </tr>   
+
+</tbody>
+
+</table>-->
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+<!--<ul >
+    <li class="pager" data-bind="css: {'disabled': !previousPageEnabled()}">
+        <a href="#" data-bind="click: previousPage">Previous</a>
+    </li>
+    <li class="pager" data-bind="css: {'disabled': !nextPageEnabled()}">
+        <a href="#" data-bind="click: nextPage">Next</a>
+    </li>
+</ul>-->
+   
+
+  </div>
+  
+  </div>
+  
+  
+
+<!--/wrapper-->
+</div> <!--/content-->
+
+
+<div class="footer">
+  <div class="wrapper">
+    <a href="" class="accredited">Get Accredited</a>
+    
+    <div class="footnote">
+      <div class="left">
+        <ul>
+          <li><a href="#">About IPO NIGERIA</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          
+        </ul>
+      </div>
+     
+      <div class="right">
+
+        <p>The Commercial Law Department, Trademarks Patents and Designs Registry, Ministry of Trade and Investment</p>
+      </div>
+  
+      <div class="right" align="right"> <br />
+
+        <p> </p>
+      </div>
+    </div>
+  </div>
+</div>
+ <!--/footer-->
+
+

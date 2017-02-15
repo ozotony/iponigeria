@@ -1,0 +1,286 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	background-image: url(../../images/back.jpg);
+
+	background-repeat: repeat-x;
+}
+.footerborder {
+	border-top-width: 1px;
+	border-top-style: double;
+	border-top-color: #CCC;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #333;
+}
+.selection {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 13px;
+	color: #000;
+}
+.selection_two {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 11px;
+	color: #000;
+}
+
+.content_div_store{
+	height: auto;
+	
+}
+.fifa_header {
+	background-image: url(../../adminpanel/images/fifa_header.jpg);
+	background-repeat: no-repeat;
+}
+.footer_text {
+	font-family: "Lucida Sans Unicode";
+	font-size: 10px;
+	color: #FFF;
+	padding-top: 16px;
+	font-weight: 500;
+}
+.login_text {
+	font-family: Arial;
+	font-size: 11px;
+	color: #000;
+}
+.login_button_padding {
+	padding-left: 53px;
+}
+.inner_text {
+	font-family: "Lucida Sans Unicode";
+	font-size: 14px;
+	color: #000;
+	background-color: #ebf6f8;
+	text-align:left
+}
+.Text_box{
+	font-family: "Lucida Sans Unicode";
+	font-size: 12px;
+	color: #333333;
+	border: 1px solid #2B8FC0;
+	width: 160px;
+}
+.Text_box_two{
+	font-family: "Lucida Sans Unicode";
+	font-size: 12px;
+	color: #333333;
+	border: 1px solid #2B8FC0;
+	width: 180px;
+}
+#nav-menu ul
+{
+list-style: none;
+padding: 0;
+margin: 0;
+}
+#nav-menu li
+{
+float: left;
+margin: 0 0.02em;
+}
+#nav-menu li a
+{
+height: 58px;
+line-height: 58px;
+float: left;
+padding-left:5px;
+padding-right:5px;
+/*width: 7em;*/
+display: block;
+text-decoration: none;
+text-align: center;
+font-family: Lucida Sans Unicode, Lucida Grande, Lucida Sans, Lucida;
+font-size: 17px;
+color: #000;
+/*font-weight:bold;*/
+}
+#nav-menu li a:hover{
+	float:none;
+	color: #FFF; /*#FDCA57;*/
+	font-family: Lucida Sans Unicode, Lucida Grande, Lucida Sans, Lucida;
+	font-size: 17px;
+	
+}
+/* Hide from IE5-Mac \*/
+#nav-menu li a
+{
+float: none
+}
+/* End hide */
+
+#nav-menu
+{
+	width:100%;
+} 
+/*end nav menu*/
+.links_bgrd {
+	background-image: url(../../adminpanel/images/links_strip.jpg);
+	background-repeat: repeat-x;
+}
+.link_black_bgrd {
+	background-image: url(../../adminpanel/images/black_link_strip.jpg);
+	background-repeat: no-repeat;
+	float: right;
+}
+.login_header {
+	background-color: #F3F3F3;
+	border-bottom-width: 4px;
+	border-bottom-style: solid;
+	border-bottom-color: #A7DEB4;
+}
+.login_table {
+	background-color: #F3F3F3;
+	border-top-width: 4px;
+	border-top-style: solid;
+	border-top-color: #A7DEB4;
+	font-family: Arial;
+	font-size: 11px;
+	color: #000000;
+	margin-left: 19px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-right-color: #CFCFCF;
+	border-bottom-color: #CFCFCF;
+	border-left-color: #CFCFCF;
+}
+.login_table_text {
+	font-family: Arial;
+	font-size: 15px;
+	color: #000;
+	padding-left: 22px;
+}
+.login_image {
+	padding-right: 24px;
+}
+
+.loginText{
+	font-family: Arial;
+	font-size: 20px;
+	color: #333333;
+	border: 1px solid #EBEBEB;
+	width:350px;
+	height:25px;
+	-webkit-border-radius:7px 7px 7px 7px;
+	-moz-border-radius:7px 7px 7px 7px;
+	
+}
+.footerborder {
+	border-top-width: 1px;
+	widows:
+	border-top-style: double;
+	border-top-color: #CCC;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #333;
+}
+.footer {
+	border-top-width: 4px;
+
+	border-top-style: solid;
+	border-top-color: #A7DEB4;
+	padding-top: 15px;
+	height:60px;
+}
+.inner_inner_table {
+	background-color: #FFF;
+	border-top-width: 4px;
+	border-top-style: solid;
+	border-top-color: #A7DEB4;
+	height:60px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-right-color: #CFCFCF;
+	border-bottom-color: #CFCFCF;
+	border-left-color: #CFCFCF;
+}
+.small{
+	background-color:#F3F3F3;
+	vertical-align:top;
+	}
+	
+.button{ cursor:pointer ; HEIGHT: 30px; WIDTH: 80px; BORDER-RIGHT: #0099CC 2px solid; BORDER-TOP: #0099CC 2px solid; BORDER-LEFT: #0099CC 2px solid; BORDER-BOTTOM: #0099CC 2px solid; BORDER-COLLAPSE: collapse; BACKGROUND-COLOR: #f9f3f8 }
+
+.longButton{ cursor:pointer ; HEIGHT: 30px; WIDTH: 100px; BORDER-RIGHT: #0099CC 2px solid; BORDER-TOP: #0099CC 2px solid; BORDER-LEFT: #0099CC 2px solid; BORDER-BOTTOM: #0099CC 2px solid; BORDER-COLLAPSE: collapse; BACKGROUND-COLOR: #f9f3f8 }
+
+.smallButton{ cursor:pointer ; HEIGHT: 20px; WIDTH: 30px; BORDER-RIGHT: #0099CC 2px solid; BORDER-TOP: #0099CC 2px solid; BORDER-LEFT: #0099CC 2px solid; BORDER-BOTTOM: #0099CC 2px solid; BORDER-COLLAPSE: collapse; BACKGROUND-COLOR: #f9f3f8 }
+
+.editButton{ cursor:pointer ; HEIGHT: 25px; WIDTH: 60px; BORDER-RIGHT: #0099CC 2px solid; BORDER-TOP: #0099CC 2px solid; BORDER-LEFT: #0099CC 2px solid; BORDER-BOTTOM: #0099CC 2px solid; BORDER-COLLAPSE: collapse; BACKGROUND-COLOR: #f9f3f8; font-size:10px;color:#3366cc}
+
+.deleteButton{ cursor:pointer ; HEIGHT: 25px; WIDTH: 70px; BORDER-RIGHT: #0099CC 2px solid; BORDER-TOP: #0099CC 2px solid; BORDER-LEFT: #0099CC 2px solid; BORDER-BOTTOM: #0099CC 2px solid; BORDER-COLLAPSE: collapse; BACKGROUND-COLOR: #f9f3f8; font-size:10px;color:#3366cc}
+       
+.checkBox { height:15px; WIDTH: 15px; SHADOW-COLOR: #ffffff; BORDER-RIGHT: #3366cc 1px solid; BORDER-TOP: #3366cc 1px solid; BORDER-LEFT: #3366cc 1px solid; BORDER-BOTTOM: #3366cc 1px solid; BORDER-COLLAPSE: collapse; BACKGROUND-COLOR: transparent }
+
+.radioButton { height:15px; WIDTH: 15px; BORDER-RIGHT: #3366cc 1px solid; BORDER-TOP: #3366cc 1px solid; BORDER-LEFT: #3366cc 1px solid; BORDER-BOTTOM: #3366cc 1px solid; BORDER-COLLAPSE: collapse; BACKGROUND-COLOR: transparent }
+
+.textBox { WIDTH: 250px; BORDER-RIGHT: #0099CC 1px solid; BORDER-TOP: #0099CC 1px solid; BORDER-LEFT: #0099CC 1px solid; BORDER-BOTTOM: #0099CC 1px solid; BORDER-COLLAPSE: collapse; BACKGROUND-COLOR: transparent }
+
+.smallTextBox { WIDTH: 100px; BORDER-RIGHT: #0099CC 1px solid; BORDER-TOP: #0099CC 1px solid; BORDER-LEFT: #0099CC 1px solid; BORDER-BOTTOM: #0099CC 1px solid; BORDER-COLLAPSE: collapse; BACKGROUND-COLOR: transparent }
+
+.longTextBox { WIDTH: 320px; BORDER-RIGHT: #0099CC 1px solid; BORDER-TOP: #0099CC 1px solid; BORDER-LEFT: #0099CC 1px solid; BORDER-BOTTOM: #0099CC 1px solid; BORDER-COLLAPSE: collapse; BACKGROUND-COLOR: transparent }
+	
+.longTextBox2 { WIDTH: 410px; BORDER-RIGHT: #0099CC 1px solid; BORDER-TOP: #0099CC 1px solid; BORDER-LEFT: #0099CC 1px solid; BORDER-BOTTOM: #0099CC 1px solid; BORDER-COLLAPSE: collapse; BACKGROUND-COLOR: transparent }
+
+.dropDown { WIDTH: 252px; BORDER-RIGHT: #0099CC 1px solid; BORDER-TOP: #0099CC 1px solid; BORDER-LEFT: #0099CC 1px solid; BORDER-BOTTOM: #0099CC 1px solid; BORDER-COLLAPSE: collapse; BACKGROUND-COLOR: transparent }
+
+.smallDropDown { WIDTH: 100px; BORDER-RIGHT: #0099CC 1px solid; BORDER-TOP: #0099CC 1px solid; BORDER-LEFT: #0099CC 1px solid; BORDER-BOTTOM: #0099CC 1px solid; BORDER-COLLAPSE: collapse; BACKGROUND-COLOR: transparent }
+
+.longDropDown { WIDTH: 320px; BORDER-RIGHT: #0099CC 1px solid; BORDER-TOP: #0099CC 1px solid; BORDER-LEFT: #0099CC 1px solid; BORDER-BOTTOM: #0099CC 1px solid; BORDER-COLLAPSE: collapse; BACKGROUND-COLOR: transparent }
+
+.textArea { WIDTH: 250px; BORDER-RIGHT: #0099CC 1px solid; BORDER-TOP: #0099CC 1px solid; BORDER-LEFT: #0099CC 1px solid; BORDER-BOTTOM: #0099CC 1px solid; BORDER-COLLAPSE: collapse; BACKGROUND-COLOR: transparent }
+
+.longTextArea { WIDTH: 320px; BORDER-RIGHT: #0099CC 1px solid; BORDER-TOP: #0099CC 1px solid; BORDER-LEFT: #0099CC 1px solid; BORDER-BOTTOM: #0099CC 1px solid; BORDER-COLLAPSE: collapse; BACKGROUND-COLOR: transparent }
+
+.button{ cursor:pointer ; HEIGHT: 30px; WIDTH: 80px; BORDER-RIGHT: #0099CC 2px solid; BORDER-TOP: #0099CC 2px solid; BORDER-LEFT: #0099CC 2px solid; BORDER-BOTTOM: #0099CC 2px solid; BORDER-COLLAPSE: collapse; BACKGROUND-COLOR: #f9f3f8 }
+
+.longButton{ cursor:pointer ; HEIGHT: 30px; WIDTH: 120px; BORDER-RIGHT: #0099CC 2px solid; BORDER-TOP: #0099CC 2px solid; BORDER-LEFT: #0099CC 2px solid; BORDER-BOTTOM: #0099CC 2px solid; BORDER-COLLAPSE: collapse; BACKGROUND-COLOR: #f9f3f8 }
+
+.smallButton{ cursor:pointer ; HEIGHT: 15px; WIDTH: 30px; BORDER-RIGHT: #0099CC 2px solid; BORDER-TOP: #0099CC 2px solid; BORDER-LEFT: #0099CC 2px solid; BORDER-BOTTOM: #0099CC 2px solid; BORDER-COLLAPSE: collapse; BACKGROUND-COLOR: #f9f3f8 }
+
+.editButton{ cursor:pointer ; HEIGHT: 25px; WIDTH: 80px; BORDER-RIGHT: #0099CC 2px solid; BORDER-TOP: #0099CC 2px solid; BORDER-LEFT: #0099CC 2px solid; BORDER-BOTTOM: #0099CC 2px solid; BORDER-COLLAPSE: collapse; BACKGROUND-COLOR: #f9f3f8; font-size:10px;color:#3366cc}
+
+.deleteButton{ cursor:pointer ; HEIGHT: 25px; WIDTH: 80px; BORDER-RIGHT: #0099CC 2px solid; BORDER-TOP: #0099CC 2px solid; BORDER-LEFT: #0099CC 2px solid; BORDER-BOTTOM: #0099CC 2px solid; BORDER-COLLAPSE: collapse; BACKGROUND-COLOR: #f9f3f8; font-size:10px;color:#3366cc}
+
+
+.s {
+	color: #F00;
+}
+.s {
+	color: #F00;
+}
+
+.s2 {
+	color: #F00;
+	font-size:9px;
+}.inner_inner_table tr .leftdotted table tr td table tr td .formatDiv table {
+	text-align: center;
+}
+.inner_inner_table tr .leftdotted table tr td table tr td .formatDiv table tr td table tr td table tr td .inner_txt tr td table {
+	text-align: left;
+}
+.inner_inner_table tr .leftdotted table tr td table tr td .formatDiv table tr td table tr td table tr td .inner_txt tr .lightGrayBack form {
+	text-align: right;
+}
+.kj {
+	color: #F00;
+}
+
+.confirm{
+		color: #00F;
+	}.BIG {
+	font-size: 24px;
+	text-align: center;
+}
+
+.FAILED {
+	font-size: 24px;
+	text-align: center;
+}

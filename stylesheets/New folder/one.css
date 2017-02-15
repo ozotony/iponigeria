@@ -1,0 +1,244 @@
+﻿body {
+    font-family: tahoma;
+    color: #444;
+    margin: 0px;
+    font-size: 11px;
+}
+
+#top_bar{
+    background-color: #eee3f7;
+    height: 32px;
+    margin-bottom: 5px;
+}
+
+#top_bar_tx{
+    margin: 0 auto;
+    width: 1000px;
+    color: #847198;
+    font-size: 11px;
+}
+
+.clear{
+    clear: both;
+}
+
+.search_text{
+    border: solid 1px #847198;
+    font-size: 11px;
+    font-family: tahoma;
+    padding: 3px;
+}
+#search_img{
+    margin-top: 10px;
+}
+#logo_area{
+    margin: 0 auto;
+    width: 1000px;
+}
+#nav{
+    margin: 0 auto;
+    width: 1000px;
+    /*
+    background-image: url('http://localhost/alumni/images/tab_back.png');
+    background-repeat: repeat-x;
+    */
+    background-color: #9182a1;
+    color: #eee;
+    font-size: 14px;
+    border: solid 1px #9182a1;
+    font-family: Lucida Sans;
+}
+
+#nav ul{
+}
+
+#nav ul li{
+    display: inline;
+    padding: 10px;
+}
+
+#nav ul li:hover{
+    background-color: #6a5580;
+}
+
+#nav ul li a{
+    color: #eee;
+    text-decoration: none;
+}
+
+#nav ul li a:hover{
+    color: #eee;
+    text-decoration: none;
+}
+
+#content{
+    margin: 0 auto;
+    width: 1000px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+	min-height:635px;
+}
+
+#content_img_area{
+    height: 200px;
+    background-color: #f7f6f8;
+    margin-bottom: 10px;
+}
+
+#content_main_left{
+    float: left;
+    width: 680px;
+    padding: 10px;
+}
+
+#content_main_right{
+    float: right;
+    width: 300px;
+}
+
+.box{
+    border: solid 1px #c1b8ca;
+}
+
+.box_header{
+    background-color: #5f4976;
+    padding: 5px;
+    font-family: Lucida Sans;
+    font-size: 14px;
+    color: #eee;
+}
+
+.box_content{
+    padding: 10px;
+    font-size: 11px;
+}
+
+#alumni_spotlight{
+    float: left;
+    width: 330px;
+}
+
+#alumni_news{
+    float: right; 
+    width: 330px;  
+}
+
+#footer{
+    margin-top: 20px;
+}
+
+#footer_tx{
+    margin: 0 auto;
+    width: 1000px;
+    padding-top: 10px;
+}
+
+#footer_tx a{
+    color: #444;
+}
+
+#footer_tx a:hover{
+    text-decoration: underline;
+    color: #444;
+}
+
+#login_area{
+    color: #eee;
+    background-color: #5f4976;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 11px;
+    margin-bottom: 20px;
+}
+
+#login_area a{
+    color: #ccc1d8;
+    text-decoration: none;
+}
+
+#login_area a:hover{
+    color: #ccc1d8;
+    text-decoration: underline;
+}
+
+#j_online{
+}
+
+#j_online ul{
+    padding: 10px;
+    padding-top: 0px;
+    margin: 0px;
+}
+
+#j_online ul li{
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #5f4976;
+    border-bottom: dashed 1px #5f4976;
+}
+
+#j_online ul li table tr td{
+    vertical-align: middle;
+    padding-left: 10px;
+}
+
+#j_online a{
+    color: #5f4976;
+    text-decoration: none;
+}
+
+#j_online a:hover{
+    color: #5f4976;
+    text-decoration: underline;
+}
+
+.news{
+    margin-top: 5px;
+    border-bottom: solid 1px #eee;
+    padding-bottom: 5px;
+}
+
+.news_head{
+    color: #5f4976;
+    margin-bottom: 5px;
+}
+
+.news_head a{
+    color: #5f4976;
+    margin-bottom: 5px;
+	text-decoration: none;
+}
+
+.news_prev{
+    color: #444;
+}
+
+#news_rss_area{
+    background-color: #dfdbe4;
+    margin-top: 10px;
+}
+#paging
+{
+	font-size: 12px;
+}
+#paging a
+{
+	text-decoration: none;
+}
+#paging a:hover
+{
+	text-decoration: underline;
+}
+.newsReadMore{
+    margin-top: 5px;
+	text-align: right;
+    border-bottom: solid 1px #eee;
+    padding-bottom: 5px;
+}
+.newsReadMore a{
+	text-decoration: none;
+    margin-top: 5px;
+    border-bottom: solid 1px #eee;
+    padding-bottom: 5px;
+}

@@ -1,0 +1,473 @@
+﻿
+<link href="stylesheets/bootstrap.min.css" rel="stylesheet" />
+<link href="stylesheets/main.css?084178A6C622C32B308BDD803C4BBE13" media="all" rel="stylesheet" type="text/css" />
+<script src="javascripts/bootstrap.min.js"></script>
+
+<style>
+    .has-error .help-block, .has-error .control-label, .has-error .radio, .has-error .checkbox, .has-error .radio-inline, .has-error .checkbox-inline {
+        color: #a94442;
+    }
+
+    .help-block {
+        display: block;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        color: red;
+    }
+
+    fieldset.scheduler-border {
+        border: 1px groove #ddd !important;
+        padding: 0 1.4em 1.4em 1.4em !important;
+        margin: 0 0 1.5em 0 !important;
+        -webkit-box-shadow: 0px 0px 0px 0px #000;
+        box-shadow: 0px 0px 0px 0px #000;
+    }
+
+  
+
+  table.table.table-striped tr.found td {
+    background-color:#CECBCB;
+}
+  .ts {
+      color:#327B12;
+      font-weight: bold;
+  }
+  .media-left {
+      margin-right:70px;
+  }
+</style>
+
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+    <tr>
+        <td>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td>
+                        <!--<table width="100%" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td align="center" class="black_bgrd"><table width="1027" border="0" cellspacing="0" cellpadding="0">
+                                  <tr>
+                                    <td><div id="nav-menu">
+                                        <ul>
+                                           <li><a href="Contact.html">Contact Us</a></li>
+                                         <li><a href="Accreditation.html">Accreditation</a></li>
+
+                                         <li><a href="Online_Service.html">Online Services</a></li>
+                                            <li><a href="Services.html">Services</a></li>
+                                           <li><a href="About.html">About Us</a></li>
+                                         <li><a href="Index.html">Home</a></li>
+                                        </ul>
+                                    </div></td>
+                                  </tr>
+                                </table></td>
+                              </tr>
+                            </table>-->
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">
+                        <div class="content">
+
+
+
+                            <table width="1027" border="0" cellspacing="0" cellpadding="0" class="main_inner_bgrd">
+                                <tr>
+                                    <td>
+                                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                            <!--<tr>
+                                              <td class="content_banner_border">
+                                                  <div id="homepix">
+                                                      <li><img alt="Xmas 1" border="0" height="275" src="images/xmas_1.jpg?084178A6C622C32B308BDD803C4BBE13" width="1025" /></li>
+                                                      <li><img alt="Xmas 2" border="0" height="275" src="images/xmas_2.jpg?084178A6C622C32B308BDD803C4BBE13" width="1025" /></li>
+                                                      <li><img alt="Xmas 3" border="0" height="275" src="images/xmas_3.jpg?084178A6C622C32B308BDD803C4BBE13" width="1025" /></li>
+                                                      <li><img alt="Xmas 4" border="0" height="275" src="images/xmas_4.jpg?084178A6C622C32B308BDD803C4BBE13" width="1025" /></li>
+                                                         <li><img alt="Xmas 5" border="0" height="275" src="images/xmas_5.jpg?084178A6C622C32B308BDD803C4BBE13" width="1025" /></li>
+                                                  </div>
+                                              </td>
+                                            </tr>-->
+                                            <tr>
+                                                <td style="padding-top:1px; padding-bottom:5px;">
+                                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                        <tr>
+                                                            <td colspan="2">
+                                                                <div class="page-header">
+                                                                    <h3 class="ts">LIST OF ACCREDITED AGENTS</h3>
+
+                                                                </div>
+
+                                                            </td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="2" valign="top" style="padding-left:22px; padding-right:45px; padding-top:50px;">
+
+                                                                <!--<table width="595" border="0" cellspacing="0" cellpadding="0">-->
+                                                                <table class="table" width=" 100%" border="0" cellspacing="0" cellpadding="0">
+                                                                    <tr>
+                                                                        <td align="left">
+
+
+                                                                            <section>
+                                                                                <div>
+                                                                                    <section id="Home" class="page">
+                                                                                        <div>
+                                                                                            <div>
+
+                                                                                                <table st-table="displayedCollection" st-safe-src="ListAgent" class="table  table-bordered table-striped ">
+                                                                                                    <thead>
+                                                                                                        <tr >
+                                                                                                            <!--<th st-sort="Sys_ID">AGENT CODE</th>
+                                                                                                            <th st-sort="CompanyName">COMPANY NAME</th>
+                                                                                                            <th st-sort="CompanyAddress">ADDRESS</th>
+                                                                                                            <th st-sort="ContactPersonPhone">PHONE NUMBER</th>
+                                                                                                            <th st-sort="Email">EMAIL ADDRESS</th>-->
+
+
+                                                                                                        </tr>
+                                                                                                        <tr>
+                                                                                                            <th colspan="5"><input st-search="" class="form-control" placeholder="global search ..." type="text" /></th>
+                                                                                                        </tr>
+                                                                                                    </thead>
+                                                                                                    <tbody>
+                                                                                                        <tr ng-repeat="row in displayedCollection">
+                                                                                                            <td colspan="5">
+                                                                                                                <ul class="media-list">
+                                                                                                                    <li class="media">
+                                                                                                                        <div class="media-left">
+                                                                                                                            <a href="#">
+                                                                                                                                <img class="media-object" style="width: 100px; height: 70px" ng-src="http://ipo.cldng.com/{{row.logo}}" />
+                                                                                                                                
+                                                                                                                            </a>
+                                                                                                                        </div>
+                                                                                                                        <div class="media-body">
+                                                                                                                            <table >
+                                                                                                                                <tr>
+                                                                                                                                    <td>
+                                                                                                                                        <strong>AGENT CODE&nbsp;</strong> 
+                                                                                                                                    </td>
+                                                                                                                                    <td>
+                                                                                                                                        {{row.Sys_ID}}
+                                                                                                                                    </td>
+
+                                                                                                                                </tr>
+                                                                                                                                <tr>
+                                                                                                                                    <td>
+                                                                                                                                        <strong>COMPANY NAME&nbsp; </strong>
+</td>
+                                                                                                                                    <td>
+                                                                                                                                {{row.CompanyName}}
+                                                                                                                                    </td>
+
+                                                                                                                                </tr>
+
+                                                                                                                                <tr>
+                                                                                                                                    <td>
+                                                                                                                                        <strong> COMPANY ADDRESS&nbsp; </strong>
+</td>
+                                                                                                                                    <td>
+                                                                                                                                        {{row.CompanyAddress}}
+                                                                                                                                    </td>
+
+                                                                                                                                </tr>
+
+                                                                                                                                <tr>
+                                                                                                                                    <td>
+                                                                                                                                        <strong>  PHONE NUMBER &nbsp;</strong>
+</td>
+                                                                                                                                    <td>
+                                                                                                                                        {{row.ContactPersonPhone}}
+                                                                                                                                    </td>
+
+                                                                                                                                </tr>
+
+                                                                                                                                <tr>
+
+                                                                                                                                    <td>
+                                                                                                                                        <strong> EMAIL&nbsp; </strong>
+</td>
+                                                                                                                                    <td>
+                                                                                                                                        {{row.Email}}
+                                                                                                                                    </td>
+
+                                                                                                                                </tr>
+
+                                                                                                                            </table>
+                                                                                                                           
+                                                                                                                        </div>
+                                                                                                                    </li>
+                                                                                                                </ul>
+                                                                                                            </td>
+                                                                                                            <!--<td>{{row.Sys_ID}}</td>
+                                                                                                            <td>{{row.CompanyName}}</td>
+                                                                                                            <td>{{row.CompanyAddress}}</td>
+                                                                                                            <td>{{row.ContactPersonPhone}}</td>
+                                                                                                            <td>{{row.Email}}</td>-->
+
+
+                                                                                                        </tr>
+                                                                                                    </tbody>
+                                                                                                    <tfoot>
+                                                                                                        <tr>
+                                                                                                            <td colspan="5" class="text-center">
+                                                                                                                <div st-pagination="" st-items-by-page="itemsByPage" st-displayed-pages="7"></div>
+                                                                                                            </td>
+                                                                                                        </tr>
+                                                                                                    </tfoot>
+                                                                                                </table>
+
+                                                                                            </div>
+                                                                                        </div>
+
+                                                                                    </section>
+
+
+                                                                                    <section id="Sucess" class="page">
+                                                                                        <div class="row-fluid">
+                                                                                            <div class="span12">
+
+
+
+                                                                                            </div>
+                                                                                        </div>
+
+                                                                                    </section>
+
+
+
+                                                                                </div>
+                                                                            </section>
+
+                                                                        </td>
+                                                                    </tr>
+
+                                                                </table>
+                                                            </td>
+                                                            <!--<td width="36%" align="right" valign="top" style="padding-top:2px;">
+                                                                <table width="350" border="0" cellspacing="0" cellpadding="0">
+                                                                    <tr ng-show="vlogin2">
+                                                                        <td align="center" style="background-color:#E0DDDE; padding:0px;">
+                                                                            <a href="" ng-click="add2(); $event.preventDefault(); $event.stopPropagation();">Logout</a> &nbsp; | &nbsp; <a href="#/DashBoard">Return To Dashboard</a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td><img alt="Spacer" height="1" src="/images/spacer.gif?084178A6C622C32B308BDD803C4BBE13" width="1" /></td>
+                                                                    </tr>
+
+
+
+                                                                    <tr ng-show="vlogin">
+                                                                        <td align="center" style="background-color:#E0DDDE; padding:0px;">
+                                                                            <form action="/main/loginprocess" method="post">
+                                                                                <table width="350" border="0" cellspacing="3" cellpadding="0" ng-show="vlogin">
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <table width="100%" border="0" cellspacing="4" cellpadding="0">
+
+                                                                                                <tr>
+                                                                                                    <td align="left"><input class="loginText" id="user-emailaddress" ng-model="Email" name="user[emailaddress]" placeholder="Username" type="text" value="" /></td>
+                                                                                                    <td align="right"><input class="loginText2" id="user-password" ng-model="Password" maxlength="200" name="user[password]" placeholder="Password" type="password" value="" /></td>
+                                                                                                </tr>
+                                                                                            </table>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                                                                <tr>
+                                                                                                    <td width="88%" align="right" style="color:#1B3B5B; padding-right:10px;">
+                                                                                                        <span style="padding-left:10px; font-size:13px; font-family: ">
+                                                                                                            <form action="/main/getaccredited/145?main=182&amp;sidemenu=182" class="blue" method="post"><input onclick="this.disabled=true;this.value='Wait...';this.form.submit();" type="submit" value="Get Accredited" /></form>
+                                                                                                        </span>
+                                                                                                    </td>
+                                                                                                    <td width="12%" align="right" style="padding-right:5px;"><input alt="Side login" ng-click="add(); $event.preventDefault(); $event.stopPropagation();" height="28" src="images/side_login.png?084178A6C622C32B308BDD803C4BBE13" type="image" width="49" /></td>
+                                                                                                </tr>
+                                                                                            </table>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </form>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td><img alt="Spacer" height="1" src="images/spacer.gif?084178A6C622C32B308BDD803C4BBE13" width="1" /></td>
+                                                                    </tr>
+
+
+
+                                                                    <tr>
+                                                                        <td align="right">
+
+
+                                                                            <table width="350" border="0" cellspacing="0" cellpadding="0" height="34" style="background-color:#106703;">
+                                                                                <tr>
+                                                                                    <td width="15" align="left" style="padding-left:14PX;"><img alt="Dot" height="6" src="images/dot.jpg?084178A6C622C32B308BDD803C4BBE13" width="6" /></td>
+                                                                                    <td width="335" align="left" class="inner_white_text" style="padding-left:7PX;">
+                                                                                        <a href="About_Registry.html"> ABOUT THE REGISTRY</a>
+
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td><img alt="Spacer" height="1" src="images/spacer.gif?084178A6C622C32B308BDD803C4BBE13" width="1" /></td>
+                                                                    </tr>
+
+
+
+                                                                    <tr>
+                                                                        <td align="right">
+
+
+                                                                            <table width="350" border="0" cellspacing="0" cellpadding="0" height="34" style="background-color:#106703;">
+                                                                                <tr>
+                                                                                    <td width="15" align="left" style="padding-left:14PX;"><img alt="Dot" height="6" src="images/dot.jpg?084178A6C622C32B308BDD803C4BBE13" width="6" /></td>
+                                                                                    <td width="335" align="left" class="inner_white_text" style="padding-left:7PX;">
+                                                                                        <a href="Management.html">THE MANAGEMENT</a>
+
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td><img alt="Spacer" height="1" src="images/spacer.gif?084178A6C622C32B308BDD803C4BBE13" width="1" /></td>
+                                                                    </tr>
+
+
+
+                                                                    <tr>
+                                                                        <td align="right" bgcolor="#000000">
+                                                                            <div id="slijder1">
+
+                                                                                <div>
+                                                                                    <table width="350" border="0" cellspacing="0" cellpadding="0" class="side_img_1 inner_white_text">
+                                                                                        <tr>
+                                                                                            <td height="149" style="padding-left:35px; padding-right:107px;">
+                                                                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                                                                    <tr>
+                                                                                                        <td align="left" style="padding-top:30px;">A trademark is a symbol or a sign which differentiates the goods and services of one business from another one.</td>
+                                                                                                    </tr>
+                                                                                                    <tr>
+                                                                                                        <td align="left" style="padding-top:5px;"><a href="/site/133?main=130&amp;sidemenu=130">Read More</a></td>
+                                                                                                    </tr>
+                                                                                                </table>
+                                                                                            </td>
+                                                                                        </tr>
+
+                                                                                    </table>
+                                                                                </div>
+                                                                                <div>
+                                                                                    <table width="350" border="0" cellspacing="0" cellpadding="0" class="side_img_2 inner_white_text">
+                                                                                        <tr>
+                                                                                            <td height="149" style="padding-left:35px; padding-right:107px;">
+                                                                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                                                                    <tr>
+                                                                                                        <td align="left" style="padding-top:30px;">Accreditation is a mandatory process for law firms, stakeholders and potential registrants that wish to act as agents.</td>
+                                                                                                    </tr>
+                                                                                                    <tr>
+                                                                                                        <td align="left" style="padding-top:5px;"><a href=""><span style="padding-top:15px;"><a href="/site/166?main=133&amp;sidemenu=133">Read More</a></span></a></td>
+                                                                                                    </tr>
+                                                                                                </table>
+                                                                                            </td>
+                                                                                        </tr>
+
+                                                                                    </table>
+                                                                                </div>
+                                                                                <div>
+                                                                                    <table width="350" border="0" cellspacing="0" cellpadding="0" class="side_img_3 inner_white_text">
+                                                                                        <tr>
+                                                                                            <td height="149" style="padding-left:35px; padding-right:107px;">
+                                                                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                                                                    <tr>
+                                                                                                        <td align="left" style="padding-top:30px;">
+                                                                                                            You can now register your Trademark, Patents and Designs Online through
+                                                                                                            our certified agents around the country.
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                    <tr>
+                                                                                                        <td align="left" style="padding-top:5px;"><a href=""><span style="padding-top:15px;"><a href="/site/185?main=133&amp;sidemenu=133">Read More</a></span></a></td>
+                                                                                                    </tr>
+                                                                                                </table>
+                                                                                            </td>
+                                                                                        </tr>
+
+                                                                                    </table>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+
+
+
+                                                                    <tr>
+                                                                        <td align="right">
+                                                                            <table width="350" border="0" cellspacing="0" cellpadding="0" class="blue_side">
+                                                                                <tr>
+                                                                                    <td align="left" valign="middle" class="blue_side_padding">
+                                                                                        Every IDEA Counts...
+                                                                                        <br>don't be a victim of
+                                                                                        <br>ignorance
+                                                                                    </td>
+                                                                                    <td align="right"><img alt="Side 4" border="0" height="86" src="images/side_4.png?084178A6C622C32B308BDD803C4BBE13" width="118" /></td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+
+                                                            </td>-->
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td align="center" class="footer_bgrd">
+                        <table width="1027" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td align="center" class="footer" style="text-transform:capitalize;">
+
+                                    <a href="#/">Home</a>  |
+                                    <a href="#/About">About Us</a>  |
+                                    <a href="#/Service">Services</a>  |
+                                    <a href="#">News Room</a>  |
+                                    <a href="#/Online_Service">Online Services</a>  |
+                                    <a href="#/Accreditation">Accreditation</a>  |
+                                    <a href="#">Careers</a>  |
+                                    <a href="#/Contact">Contact Us</a>
+
+                                </td>
+                                <td align="right">
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                        <tr>
+                                            <td align="left" style="padding-right:0px;"><img alt="Linkedin" height="24" src="images/linkedin.png?084178A6C622C32B308BDD803C4BBE13" width="24" /></td>
+                                            <td align="right">
+                                                <a href="https://twitter.com/TISCNigeria" target="_blank"><img alt="Twitter" height="24" src="images/twitter.png?084178A6C622C32B308BDD803C4BBE13" title="IPO Nigeria Twitter" width="24" /></a>
+
+                                            </td>
+                                            <td align="right" style="padding-right:10px;">
+                                                <a href="https://www.facebook.com/groups/tiscnigeria/?ref=ts&fref=ts" target="_blank"><img alt="Facebook" height="24" src="images/facebook.png?084178A6C622C32B308BDD803C4BBE13" title="IPO Nigeria Facebook" width="24" /></a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+<!--</body>
+</html>-->

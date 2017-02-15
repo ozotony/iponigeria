@@ -1,0 +1,812 @@
+﻿
+
+<link href="stylesheets/bootstrap.min.css" rel="stylesheet" />
+<link href="stylesheets/main.css?084178A6C622C32B308BDD803C4BBE13" media="all" rel="stylesheet" type="text/css" />
+<script src="javascripts/bootstrap.min.js"></script>
+<link href="Content/loading-bar.css" rel="stylesheet" />
+
+<style>
+
+
+    .has-error .help-block, .has-error .control-label, .has-error .radio, .has-error .checkbox, .has-error .radio-inline, .has-error .checkbox-inline {
+        color: #a94442;
+    }
+
+    .help-block {
+        display: block;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        color: red;
+    }
+
+  fieldset.scheduler-border {
+    border: 1px groove #ddd !important;
+    padding: 0 1.4em 1.4em 1.4em !important;
+    margin: 0 0 1.5em 0 !important;
+    -webkit-box-shadow:  0px 0px 0px 0px #000;
+            box-shadow:  0px 0px 0px 0px #000;
+}
+   
+</style>
+
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+    <tr>
+        <td>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td>
+                        <!--<table width="100%" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td align="center" class="black_bgrd"><table width="1027" border="0" cellspacing="0" cellpadding="0">
+                                  <tr>
+                                    <td><div id="nav-menu">
+                                        <ul>
+                                           <li><a href="Contact.html">Contact Us</a></li>
+                                         <li><a href="Accreditation.html">Accreditation</a></li>
+
+                                         <li><a href="Online_Service.html">Online Services</a></li>
+                                            <li><a href="Services.html">Services</a></li>
+                                           <li><a href="About.html">About Us</a></li>
+                                         <li><a href="Index.html">Home</a></li>
+                                        </ul>
+                                    </div></td>
+                                  </tr>
+                                </table></td>
+                              </tr>
+                            </table>-->
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">
+                        <div class="content">
+
+
+
+                            <table width="1027" border="0" cellspacing="0" cellpadding="0" class="main_inner_bgrd">
+                                <tr>
+                                    <td>
+                                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                            <!--<tr>
+                                              <td class="content_banner_border">
+                                                  <div id="homepix">
+                                                      <li><img alt="Xmas 1" border="0" height="275" src="images/xmas_1.jpg?084178A6C622C32B308BDD803C4BBE13" width="1025" /></li>
+                                                      <li><img alt="Xmas 2" border="0" height="275" src="images/xmas_2.jpg?084178A6C622C32B308BDD803C4BBE13" width="1025" /></li>
+                                                      <li><img alt="Xmas 3" border="0" height="275" src="images/xmas_3.jpg?084178A6C622C32B308BDD803C4BBE13" width="1025" /></li>
+                                                      <li><img alt="Xmas 4" border="0" height="275" src="images/xmas_4.jpg?084178A6C622C32B308BDD803C4BBE13" width="1025" /></li>
+                                                         <li><img alt="Xmas 5" border="0" height="275" src="images/xmas_5.jpg?084178A6C622C32B308BDD803C4BBE13" width="1025" /></li>
+                                                  </div>
+                                              </td>
+                                            </tr>-->
+                                            <tr>
+                                                <td style="padding-top:1px; padding-bottom:5px;">
+                                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                        <tr>
+                                                            <td width="64%" align="left" valign="top" style="padding-left:22px; padding-right:45px; padding-top:50px;">
+
+                                                                <table width="595" border="0" cellspacing="0" cellpadding="0">
+                                                                    <tr>
+                                                                        <td align="left" >
+                                                                        
+                                                                        
+                                                                            <section >
+                                                                                <div >
+                                                                                    <section id="Home" class="page">
+                                                                                        <div >
+                                                                                            <div >
+
+                                                                                                <form name="userForm" class="form-horizontal" ng-submit="submitForm(userForm.$valid)" novalidate>
+
+
+                                                                                                    <!--<ul class="nav nav-tabs">
+            <li class="active"><a href="#home" data-toggle="tab">Bio Data</a></li>
+            <li><a href="#profile" data-toggle="tab">Company Info</a></li>
+            <li><a href="#messages" data-toggle="tab">Login Info</a></li>
+            <li><a href="#settings" data-toggle="tab">Supporting Document</a></li>
+        </ul>-->
+                                                                                                    <!--<div class="tab-content">-->
+
+
+
+                                                                                                    <div  id="home">
+                                                                                                        <fieldset class="scheduler-border">
+                                                                                                            <legend class="scheduler-border"> Information of Principal Partner</legend>
+                                                                                                            <div class="row">
+                                                                                                                <div>
+
+                                                                                                                    <div>
+                                                                                                                        <div class="control-group">
+                                                                                                                            <label class="control-label" for="AccountType"> ACCOUNT TYPE   </label>
+                                                                                                                            <div class="controls">
+                                                                                                                                <select ng-model="AccountType" name="AccountType" class="form-control" data-ng-options="item for item in items" required>
+                                                                                                                                    <option value="">-- Select AccountType --</option>
+
+                                                                                                                                </select>
+
+
+                                                                                                                            </div>
+                                                                                                                            <span class="help-block" data-ng-show="userForm.AccountType.$error.required">This is required.</span>
+                                                                                                                            <p ng-show="userForm.AccountType.$invalid && !userForm.AccountType.$pristine" class="help-block">ACCOUNT TYPE is required.</p>
+                                                                                                                        </div>
+
+                                                                                                                    </div>
+
+                                                                                                                    <div>
+                                                                                                                        <div class="control-group">
+                                                                                                                            <label class="control-label" for="FirstName">FIRSTNAME </label>
+                                                                                                                            <div class="controls">
+                                                                                                                                <input name="name" class="form-control" ng-model="firstname" required
+                                                                                                                                       type="text" />
+
+                                                                                                                            </div>
+
+                                                                                                                            <div id='myform_Name_errorloc'>
+                                                                                                                                <span class="help-block" data-ng-show="userForm.name.$error.required">This is required.</span>
+                                                                                                                                <p ng-show="userForm.name.$invalid && !userForm.name.$pristine" class="help-block">You name is required.</p>
+                                                                                                                            </div>
+
+                                                                                                                        </div>
+                                                                                                                    </div>
+
+
+                                                                                                                </div>
+                                                                                                            </div>
+
+                                                                                                            <div class="row">
+
+                                                                                                                <div>
+                                                                                                                    <div class="control-group">
+                                                                                                                        <label class="control-label" for="Surname">SURNAME </label>
+                                                                                                                        <div class="controls">
+                                                                                                                            <input name="surname" class="form-control" ng-model="surname" required type="text" />
+                                                                                                                            <span class="help-block" data-ng-show="userForm.surname.$error.required">This is required.</span>
+                                                                                                                            <p ng-show="userForm.surname.$invalid && !userForm.surname.$pristine" class="help-block">You Surname is required.</p>
+                                                                                                                        </div>
+
+                                                                                                                    </div>
+
+                                                                                                                </div>
+
+                                                                                                                <div>
+                                                                                                                    <div class="control-group">
+                                                                                                                        <label class="control-label" for="Nationality">NATIONALITY</label>
+                                                                                                                        <div class="controls">
+
+                                                                                                                            <select ng-model="country" name="country" class="form-control" data-ng-options="c.code as c.name for c in countries" data-ng-change="GetStates()" required>
+                                                                                                                                <option value="">-- Select Country --</option>
+                                                                                                                            </select>
+
+                                                                                                                            <!--<input id="dob" class="datepicker" type="text" />-->
+
+                                                                                                                        </div>
+                                                                                                                        <span class="help-block" data-ng-show="userForm.country.$error.required">This is required.</span>
+                                                                                                                    </div>
+                                                                                                                </div>
+
+
+                                                                                                            </div>
+
+                                                                                                            <div class="row">
+
+                                                                                                                <div>
+                                                                                                                    <div class="control-group">
+                                                                                                                        <label class="control-label" for="State">STATE</label>
+                                                                                                                        <div class="controls">
+                                                                                                                            <select ng-model="state" style="display:inline" class="form-control" name="state"  data-ng-disabled="!states"  data-ng-options="s.id as s.name for s in states" required>
+                                                                                                                                <option value="">-- Select State --</option>
+                                                                                                                            </select>
+                                                                                                                            <!--<input id="email" type="text" />-->
+
+                                                                                                                        </div>
+                                                                                                                        <span class="help-block" data-ng-show="userForm.state.$error.required">This is required.</span>
+                                                                                                                    </div>
+
+                                                                                                                </div>
+
+                                                                                                                <div>
+                                                                                                                    <div class="control-group">
+                                                                                                                        <label class="control-label" for="dob">DATE OF BIRTH</label>
+                                                                                                                        <div class="controls">
+
+
+                                                                                                                            <input type="text" class="form-control" name="vdate" required ng-model="date" jqdatepicker />
+                                                                                                                            <span class="help-block" data-ng-show="userForm.vdate.$error.required">This is required.</span>
+                                                                                                                            <p ng-show="userForm.vdate.$invalid && !userForm.vdate.$pristine" class="help-block">Select Date.</p>
+                                                                                                                        </div>
+
+                                                                                                                    </div>
+
+
+                                                                                                                </div>
+
+
+                                                                                                            </div>
+
+                                                                                                        </fieldset>
+
+
+
+</div>
+
+                                                                                                    <!--<div class="tab-pane" id="profile">-->
+                                                                                                    <fieldset class="scheduler-border">
+                                                                                                        <legend class="scheduler-border">Company Information</legend>
+
+                                                                                                        <div class="row">
+                                                                                                            <div>
+
+                                                                                                                <div>
+                                                                                                                    <div class="control-group">
+                                                                                                                        <label class="control-label" for="CompName">COMPANY NAME</label>
+                                                                                                                        <div class="controls">
+
+                                                                                                                            <input name="CompName" class="form-control" required ng-model="CompName" type="text" />
+                                                                                                                            <!--<select id="AccountType">
+                                <option></option>
+
+                            </select>-->
+
+
+                                                                                                                        </div>
+                                                                                                                        <span class="help-block" data-ng-show="userForm.CompName.$error.required">This is required.</span>
+                                                                                                                    </div>
+
+                                                                                                                </div>
+
+                                                                                                                <div>
+                                                                                                                    <div class="control-group">
+                                                                                                                        <label class="control-label" for="CompAddress">COMPANY ADDRESS</label>
+                                                                                                                        <div class="controls">
+                                                                                                                            <textarea name="CompAddress" class="form-control" required ng-model="CompAddress" rows="5" cols="20"></textarea>
+
+
+                                                                                                                        </div>
+                                                                                                                        <span class="help-block" data-ng-show="userForm.CompAddress.$error.required">This is required.</span>
+                                                                                                                    </div>
+                                                                                                                </div>
+
+
+                                                                                                            </div>
+                                                                                                        </div>
+
+
+                                                                                                        <div class="row">
+                                                                                                            <div>
+
+                                                                                                                <div>
+                                                                                                                    <div class="control-group">
+                                                                                                                        <label class="control-label" for="CompEmail">COMPANY EMAIL</label>
+                                                                                                                        <div class="controls">
+
+
+
+                                                                                                                            <input name="CompEmail" class="form-control" ng-model="CompEmail" type="email" ng-pattern="/^[_a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/" required />
+                                                                                                                            <span class="help-block" data-ng-show="userForm.CompEmail.$error.required">This is required.</span>
+                                                                                                                            <!--<input name="CompEmail" class="form-control" ng-model="CompEmail"    />-->
+                                                                                                                            <p ng-show="userForm.CompEmail.$invalid && !userForm.CompEmail.$pristine" class="help-block">Email Invalid.</p>
+                                                                                                                            <!--<select id="AccountType">
+                                <option></option>
+
+                            </select>-->
+
+
+                                                                                                                        </div>
+
+                                                                                                                    </div>
+
+                                                                                                                </div>
+
+                                                                                                                <div>
+                                                                                                                    <div class="control-group">
+                                                                                                                        <label class="control-label" for="CompPhone">COMPANY PHONE</label>
+                                                                                                                        <div class="controls">
+                                                                                                                            <input name="CompPhone" class="form-control" ng-model="CompPhone" type="text" />
+
+
+
+                                                                                                                        </div>
+
+                                                                                                                    </div>
+                                                                                                                </div>
+
+
+                                                                                                            </div>
+                                                                                                        </div>
+
+
+                                                                                                        <div class="row">
+                                                                                                            <div>
+
+                                                                                                                <div>
+                                                                                                                    <div class="control-group">
+                                                                                                                        <label class="control-label" for="CompPerson">CONTACT PERSON</label>
+                                                                                                                        <div class="controls">
+
+                                                                                                                            <input name="CompPerson" class="form-control" ng-model="CompPerson" type="text" />
+                                                                                                                            <!--<select id="AccountType">
+                                <option></option>
+
+                            </select>-->
+
+
+                                                                                                                        </div>
+
+                                                                                                                    </div>
+
+                                                                                                                </div>
+
+                                                                                                                <div>
+                                                                                                                    <div class="control-group">
+                                                                                                                        <label class="control-label" for="ContactPhone">CONTACT NUMBER</label>
+                                                                                                                        <div class="controls">
+                                                                                                                            <input name="ContactPhone" class="form-control" ng-model="ContactPhone" type="text" />
+
+
+
+                                                                                                                        </div>
+
+                                                                                                                    </div>
+                                                                                                                </div>
+
+
+                                                                                                            </div>
+                                                                                                        </div>
+
+
+                                                                                                        <div class="row">
+                                                                                                            <div>
+
+                                                                                                                <div>
+                                                                                                                    <div class="control-group">
+                                                                                                                        <label class="control-label" for="DobIncorp">DATE INCORPORATED</label>
+                                                                                                                        <div class="controls">
+
+                                                                                                                            <!--<input id="DobIncorp" class="form-control" data-provide="datepicker" data-bind="value: DobIncorp" type="text" />-->
+
+                                                                                                                            <input type="text" class="form-control" name="DobIncorp" ng-model="DobIncorp" jqdatepicker />
+                                                                                                                            <p ng-show="userForm.DobIncorp.$invalid && !userForm.DobIncorp.$pristine" class="help-block">Select Date.</p>
+
+                                                                                                                            <!--<select id="AccountType">
+                                <option></option>
+
+                            </select>-->
+
+
+                                                                                                                        </div>
+
+                                                                                                                    </div>
+
+                                                                                                                </div>
+
+
+
+
+                                                                                                            </div>
+                                                                                                        </div>
+
+
+                                                                                                        <!--</div>-->
+                                                                                                        <!--<div class="tab-pane" id="messages">-->
+                                                                                                        <div class="row">
+                                                                                                            <div>
+
+                                                                                                                <div>
+                                                                                                                    <div class="control-group">
+                                                                                                                        <label class="control-label" for="Email">EMAIL </label>
+                                                                                                                        <div class="controls">
+
+                                                                                                                            <input name="VEMAIL" id="VEMAIL" class="form-control" ng-model="vemail" ng-blur="change()" required type="email" ng-pattern="/^[_a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/" />
+                                                                                                                            <!--<input name="VEMAIL" class="form-control" ng-model="VEMAIL"   />-->
+                                                                                                                            <span class="help-block" data-ng-show="userForm.VEMAIL.$error.required">This is required.</span>
+                                                                                                                            <p ng-show="userForm.VEMAIL.$invalid && !userForm.VEMAIL.$pristine" class="help-block">Email Invalid.</p>
+
+
+
+                                                                                                                        </div>
+
+                                                                                                                    </div>
+
+                                                                                                                </div>
+
+                                                                                                                <div>
+                                                                                                                    <div class="control-group">
+                                                                                                                        <label class="control-label" for="password">PASSWORD </label>
+                                                                                                                        <div class="controls">
+                                                                                                                            <input name="password" class="form-control" ng-model="password" type="password" required />
+                                                                                                                            <span class="help-block" data-ng-show="userForm.password.$error.required">This is required.</span>
+                                                                                                                            <p ng-show="userForm.password.$invalid && !userForm.password.$pristine" class="help-block">You password is required.</p>
+
+                                                                                                                        </div>
+
+                                                                                                                    </div>
+                                                                                                                </div>
+
+
+                                                                                                            </div>
+                                                                                                        </div>
+
+                                                                                                        <div class="row">
+                                                                                                            <div>
+
+                                                                                                                <div>
+                                                                                                                    <div class="control-group">
+                                                                                                                        <label class="control-label" for="ConfirmPassword">CONFIRM PASSWORD </label>
+                                                                                                                        <div class="controls">
+
+                                                                                                                            <input name="ConfirmPassword" class="form-control" ng-model="ConfirmPassword" ng-match="password" type="password" required />
+
+                                                                                                                            <!--<input name="ConfirmPassword" class="form-control" ng-model="ConfirmPassword"  type="password" />-->
+                                                                                                                            <span class="help-block" data-ng-show="userForm.ConfirmPassword.$error.required">This is required.</span>
+                                                                                                                            <span class="help-block" data-ng-show="userForm.ConfirmPassword.$error.match">Passwords do not match.</span>
+
+
+                                                                                                                        </div>
+
+                                                                                                                    </div>
+
+                                                                                                                </div>
+
+
+
+
+                                                                                                            </div>
+                                                                                                        </div>
+
+                                                                                                    </fieldset>
+
+                                                                                                    <!--</div>-->
+                                                                                                    <!--<div class="tab-pane" id="settings">-->
+                                                                                                    <fieldset class="scheduler-border">
+                                                                                                        <legend class="scheduler-border">Document</legend>
+
+                                                                                                        <div class="row">
+                                                                                                            <div>
+
+                                                                                                                <div>
+                                                                                                                    <div class="control-group">
+                                                                                                                        <label class="control-label" for="cac">CAC CERTIFICATE <span style="color:red">*PDF</span> </label>
+                                                                                                                        <div class="controls">
+                                                                                                                            <input id="cac" name="cac" class="form-control" required type="file" />
+
+                                                                                                                            <!--<select id="AccountType">
+                                <option></option>
+
+                            </select>-->
+
+
+                                                                                                                        </div>
+                                                                                                                        <span class="help-block" data-ng-show="userForm.cac.$error.required">This is required.</span>
+                                                                                                                    </div>
+
+                                                                                                                </div>
+
+                                                                                                                <div>
+                                                                                                                    <div class="control-group">
+                                                                                                                        <label class="control-label" for="Letter_Intro">A letter addressed to the Registrar introducing the principal partner and company representative <span style="color:red">*PDF</span> </label>
+                                                                                                                        <div class="controls">
+                                                                                                                            <input id="Letter_Intro" name="Letter_Intro" required class="form-control" data-bind="value: loi" type="file" />
+
+
+
+
+                                                                                                                        </div>
+                                                                                                                        <span class="help-block" data-ng-show="userForm.Letter_Intro.$error.required">This is required.</span>
+                                                                                                                    </div>
+                                                                                                                </div>
+
+
+                                                                                                            </div>
+                                                                                                        </div>
+
+                                                                                                        <div class="row">
+                                                                                                            <div>
+
+                                                                                                                <div>
+                                                                                                                    <div class="control-group">
+                                                                                                                        <label class="control-label" for="passport">Photograph of Principal Partner <span style="color:red">*JPEG</span> </label>
+                                                                                                                        <div class="controls">
+                                                                                                                            <input id="passport" name="passport" required class="form-control" data-bind="value: passport" type="file" />
+
+                                                                                                                            <!--<select id="AccountType">
+                                <option></option>
+
+                            </select>-->
+
+
+                                                                                                                        </div>
+                                                                                                                        <span class="help-block" data-ng-show="userForm.passport.$error.required">This is required.</span>
+                                                                                                                    </div>
+
+                                                                                                                </div>
+
+
+
+
+                                                                                                            </div>
+                                                                                                        </div>
+
+                                                                                                    </fieldset>
+                                                                                                    <div class="row">
+
+                                                                                                        <div>
+                                                                                                            <div class="control-group">
+                                                                                                                <button id="Button3" type="submit" ng-disabled="processing" class="btn-primary"> Submit </button>
+
+                                                                                                            </div>
+
+                                                                                                        </div>
+
+                                                                                                        <div>
+
+                                                                                                            <!--<div>
+                                                                                                                <p>Dirty? {{userForm.$dirty}}</p>
+                                                                                                                <p>Invalid? {{userForm.$invalid}}</p>
+                                                                                                                <p>Pristine? {{userForm.$pristine}}</p>
+                                                                                                            </div>-->
+
+                                                                                                        </div>
+
+
+                                                                                                    </div>
+
+                                                                                                    <!--</div>-->
+                                                                                                    <!--</div>-->
+
+
+                                                                                                </form>
+
+                                                                                            </div>
+                                                                                        </div>
+
+                                                                                    </section>
+
+
+                                                                                    <section id="Sucess" class="page">
+                                                                                        <div class="row-fluid">
+                                                                                            <div class="span12">
+
+
+
+                                                                                            </div>
+                                                                                        </div>
+
+                                                                                    </section>
+
+
+
+                                                                                </div>
+                                                                            </section>
+                                                                        
+                                                                         </td>
+                                                                    </tr>
+                                                                 
+                                                                </table>
+                                                            </td>
+                                                            <td width="36%" align="right" valign="top" style="padding-top:2px;">
+                                                                <table width="350" border="0" cellspacing="0" cellpadding="0">
+                                                                    <tr ng-show="vlogin2">
+                                                                        <td align="center" style="background-color:#E0DDDE; padding:0px;">
+                                                                            <a href="" ng-click="add2(); $event.preventDefault(); $event.stopPropagation();">Logout</a> &nbsp; | &nbsp; <a href="#/DashBoard">Return To Dashboard</a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td><img alt="Spacer" height="1" src="/images/spacer.gif?084178A6C622C32B308BDD803C4BBE13" width="1" /></td>
+                                                                    </tr>
+
+
+
+                                                                    <tr ng-show="vlogin">
+                                                                        <td align="center" style="background-color:#E0DDDE; padding:0px;">
+                                                                            <form action="/main/loginprocess" method="post">
+                                                                                <table width="350" border="0" cellspacing="3" cellpadding="0" ng-show="vlogin">
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <table width="100%" border="0" cellspacing="4" cellpadding="0">
+
+                                                                                                <tr>
+                                                                                                    <td align="left"><input class="loginText" id="user-emailaddress" ng-model="Email" name="user[emailaddress]" placeholder="Username" type="text" value="" /></td>
+                                                                                                    <td align="right"><input class="loginText2" id="user-password" ng-model="Password" maxlength="200" name="user[password]" placeholder="Password" type="password" value="" /></td>
+                                                                                                </tr>
+                                                                                            </table>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                                                                <tr>
+                                                                                                    <td width="88%" align="right" style="color:#1B3B5B; padding-right:10px;">
+                                                                                                        <span style="padding-left:10px; font-size:13px; font-family: ">
+                                                                                                            <form action="/main/getaccredited/145?main=182&amp;sidemenu=182" class="blue" method="post"><input onclick="this.disabled=true;this.value='Wait...';this.form.submit();" type="submit" value="Get Accredited" /></form>
+                                                                                                        </span>
+                                                                                                    </td>
+                                                                                                    <td width="12%" align="right" style="padding-right:5px;"><input alt="Side login" ng-click="add(); $event.preventDefault(); $event.stopPropagation();" height="28" src="images/side_login.png?084178A6C622C32B308BDD803C4BBE13" type="image" width="49" /></td>
+                                                                                                </tr>
+                                                                                            </table>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </form>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td><img alt="Spacer" height="1" src="images/spacer.gif?084178A6C622C32B308BDD803C4BBE13" width="1" /></td>
+                                                                    </tr>
+
+
+
+                                                                    <tr>
+                                                                        <td align="right">
+
+
+                                                                            <table width="350" border="0" cellspacing="0" cellpadding="0" height="34" style="background-color:#106703;">
+                                                                                <tr>
+                                                                                    <td width="15" align="left" style="padding-left:14PX;"><img alt="Dot" height="6" src="images/dot.jpg?084178A6C622C32B308BDD803C4BBE13" width="6" /></td>
+                                                                                    <td width="335" align="left" class="inner_white_text" style="padding-left:7PX;">
+                                                                                        <a href="About_Registry.html"> ABOUT THE REGISTRY</a>
+
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td><img alt="Spacer" height="1" src="images/spacer.gif?084178A6C622C32B308BDD803C4BBE13" width="1" /></td>
+                                                                    </tr>
+
+
+
+                                                                    <tr>
+                                                                        <td align="right">
+
+
+                                                                            <table width="350" border="0" cellspacing="0" cellpadding="0" height="34" style="background-color:#106703;">
+                                                                                <tr>
+                                                                                    <td width="15" align="left" style="padding-left:14PX;"><img alt="Dot" height="6" src="images/dot.jpg?084178A6C622C32B308BDD803C4BBE13" width="6" /></td>
+                                                                                    <td width="335" align="left" class="inner_white_text" style="padding-left:7PX;">
+                                                                                        <a href="Management.html">THE MANAGEMENT</a>
+
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td><img alt="Spacer" height="1" src="images/spacer.gif?084178A6C622C32B308BDD803C4BBE13" width="1" /></td>
+                                                                    </tr>
+
+
+
+                                                                    <tr>
+                                                                        <td align="right" bgcolor="#000000">
+                                                                            <div id="slijder1">
+
+                                                                                <div>
+                                                                                    <table width="350" border="0" cellspacing="0" cellpadding="0" class="side_img_1 inner_white_text">
+                                                                                        <tr>
+                                                                                            <td height="149" style="padding-left:35px; padding-right:107px;">
+                                                                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                                                                    <tr>
+                                                                                                        <td align="left" style="padding-top:30px;">A trademark is a symbol or a sign which differentiates the goods and services of one business from another one.</td>
+                                                                                                    </tr>
+                                                                                                    <tr>
+                                                                                                        <td align="left" style="padding-top:5px;"><a href="/site/133?main=130&amp;sidemenu=130">Read More</a></td>
+                                                                                                    </tr>
+                                                                                                </table>
+                                                                                            </td>
+                                                                                        </tr>
+
+                                                                                    </table>
+                                                                                </div>
+                                                                                <div>
+                                                                                    <table width="350" border="0" cellspacing="0" cellpadding="0" class="side_img_2 inner_white_text">
+                                                                                        <tr>
+                                                                                            <td height="149" style="padding-left:35px; padding-right:107px;">
+                                                                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                                                                    <tr>
+                                                                                                        <td align="left" style="padding-top:30px;">Accreditation is a mandatory process for law firms, stakeholders and potential registrants that wish to act as agents.</td>
+                                                                                                    </tr>
+                                                                                                    <tr>
+                                                                                                        <td align="left" style="padding-top:5px;"><a href=""><span style="padding-top:15px;"><a href="/site/166?main=133&amp;sidemenu=133">Read More</a></span></a></td>
+                                                                                                    </tr>
+                                                                                                </table>
+                                                                                            </td>
+                                                                                        </tr>
+
+                                                                                    </table>
+                                                                                </div>
+                                                                                <div>
+                                                                                    <table width="350" border="0" cellspacing="0" cellpadding="0" class="side_img_3 inner_white_text">
+                                                                                        <tr>
+                                                                                            <td height="149" style="padding-left:35px; padding-right:107px;">
+                                                                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                                                                    <tr>
+                                                                                                        <td align="left" style="padding-top:30px;">
+                                                                                                            You can now register your Trademark, Patents and Designs Online through
+                                                                                                            our certified agents around the country.
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                    <tr>
+                                                                                                        <td align="left" style="padding-top:5px;"><a href=""><span style="padding-top:15px;"><a href="/site/185?main=133&amp;sidemenu=133">Read More</a></span></a></td>
+                                                                                                    </tr>
+                                                                                                </table>
+                                                                                            </td>
+                                                                                        </tr>
+
+                                                                                    </table>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+
+
+
+                                                                    <tr>
+                                                                        <td align="right">
+                                                                            <table width="350" border="0" cellspacing="0" cellpadding="0" class="blue_side">
+                                                                                <tr>
+                                                                                    <td align="left" valign="middle" class="blue_side_padding">
+                                                                                        Every IDEA Counts...
+                                                                                        <br>don't be a victim of
+                                                                                        <br>ignorance
+                                                                                    </td>
+                                                                                    <td align="right"><img alt="Side 4" border="0" height="86" src="images/side_4.png?084178A6C622C32B308BDD803C4BBE13" width="118" /></td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td align="center" class="footer_bgrd">
+                        <table width="1027" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td align="center" class="footer" style="text-transform:capitalize;">
+
+                                    <a href="#/">Home</a>  |
+                                    <a href="#/About">About Us</a>  |
+                                    <a href="#/Service">Services</a>  |
+                                    <a href="#">News Room</a>  |
+                                    <a href="#/Online_Service">Online Services</a>  |
+                                    <a href="#/Accreditation">Accreditation</a>  |
+                                    <a href="#">Careers</a>  |
+                                    <a href="#/Contact">Contact Us</a>
+
+                                </td>
+                                <td align="right">
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                        <tr>
+                                            <td align="left" style="padding-right:0px;"><img alt="Linkedin" height="24" src="images/linkedin.png?084178A6C622C32B308BDD803C4BBE13" width="24" /></td>
+                                            <td align="right">
+                                                <a href="https://twitter.com/TISCNigeria" target="_blank"><img alt="Twitter" height="24" src="images/twitter.png?084178A6C622C32B308BDD803C4BBE13" title="IPO Nigeria Twitter" width="24" /></a>
+
+                                            </td>
+                                            <td align="right" style="padding-right:10px;">
+                                                <a href="https://www.facebook.com/groups/tiscnigeria/?ref=ts&fref=ts" target="_blank"><img alt="Facebook" height="24" src="images/facebook.png?084178A6C622C32B308BDD803C4BBE13" title="IPO Nigeria Facebook" width="24" /></a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+<!--</body>
+</html>-->

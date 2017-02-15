@@ -1,0 +1,24 @@
+@charset "utf-8";
+/* CSS Document */
+
+ table {font-family:arial; font-size:12px;}
+
+
+
+/*recent definitions*/
+.tableDisplay {background-color:#fff/*F5F7FD*/; font-size:12px; border:solid 1px #bcbaa2; border-bottom:none;color:#222222;}
+.tableDisplay2 {border:solid 1px #bcbaa2; margin-bottom:10px;}
+.tableDisplay td {border-bottom:solid 1px #bcbaa2}
+.tableRowTop {font-size:12px; background-color:#f1f1d8/*C6CEDB*/}
+.flatButton {border:solid 1px #cccccc;}
+.adminBanner { background-image:url(../../adminpanel/images/headerbg.jpg); height:100px; background-repeat:repeat-x;}
+.formatDiv {background-color:#5F711B; width:inherit; }
+.formatDiv tr {
+	background-color:#fff;
+	text-align: left;
+}
+.formatDiv .formatRow {background-color:#ececec; vertical-align:top;}
+
+.board1{
+	border: thin solid #B9BDC0;
+}

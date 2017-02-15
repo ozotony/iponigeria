@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* CSS Document */
+/*Change '#your_div_id_here' to the ID attribute of your DIV
+/*Change 'top' to your header height, if no header change to 0 */
+/*If you want the DIV on the right side of the page, change 'left:0' to 'right:0' */
+/* Change 'width' to whatever size you want your DIV to be */
+#your_div_id {
+	position: absolute;
+	left: 55px;
+	top: 367px;
+	width: 200px;
+	padding: 0;
+}

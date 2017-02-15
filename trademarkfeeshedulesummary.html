@@ -1,0 +1,502 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="author" content="" />
+<meta name="copyright" content="" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />	
+<link rel="Shortcut Icon" href="favicon.ico" />
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
+<script src="javascripts/jquery-2.1.1.min.js" type="text/javascript"></script>
+<link href="stylesheets/iponigeria.css?488E63B4AF2CA89C158F7A9BCE86B75C" media="all" rel="stylesheet" type="text/css" />
+<link href="stylesheets/error.css?488E63B4AF2CA89C158F7A9BCE86B75C" media="all" rel="stylesheet" type="text/css" />
+<script src="javascripts/treemenu.js?488E63B4AF2CA89C158F7A9BCE86B75C" type="text/javascript"></script>
+
+<link rel="stylesheet" href="styles/style.css" type="text/css" />
+<link rel="stylesheet" href="stylesheets/iponigeria.css" type="text/css" />
+<script src="javascripts/knockout-2.2.0.js" type="text/javascript"></script>
+
+<script src="javascripts/Login.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="stylesheets/cAdmin.css" type="text/css" />
+
+<title>The Commercial Law Department, Trademarks Patents and Designs Registry, Ministry of Trade and Investment</title>
+<script type="text/javascript" src="js/treemenu.js"></script>
+
+<script type="text/javascript">
+ $(document).ready(function () {
+
+          
+            ko.applyBindings(new AppAgentModel());
+         
+
+        });
+
+</script>
+</head>
+
+<body>
+ 
+<div class="header">
+  <div class="wrapper">
+    <div class="nav">
+      <ul>
+      <li class="home"><a href="Index.html">Home</a></li>
+    <li><a href="About.html">About Us</a></li>
+    <li><a href="Services.html">Services</a></li>
+    <li><a href="Online_Service.html">Online Services</a></li>
+    <li><a href="NewsRoom.html">News Room</a></li>
+    <li><a href="Accreditation.html">Accreditation</a></li>
+    <li><a href="Contact.html">Contact Us</a></li>
+           
+
+      </ul>
+    </div>
+    <div class="upper">
+      <a href="" class="logo">IPONigeria</a>
+      <div class="log">
+        
+        
+        <div class="admin">
+        
+ 
+               <p><span>Welcome </span> <span data-bind="text:Agent_Name"> </span> </p>
+ 
+  <strong> Account Type:</strong>Corporate<br/>
+ <strong>         User Level :</strong> Main Agent<br/>
+
+		
+          <strong>Agent Number:<span data-bind="text:Sys_ID">  </span> </strong>
+		 
+
+
+       <strong>
+       Account Status Level</strong>:Approved</p>
+      </p>
+    
+          <p><a href="#" data-bind="click :$root.LogOut2" class="btn">Sign Out</a></p>
+        </div>
+        
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+ <!--/header-->
+
+
+
+
+<div class="content">
+  <div class="wrapper">
+  
+   
+
+<div class="dashnav">
+      <p class="left">Dashboard</p>
+      
+      <div class="dashlink">
+      <ul>
+        <li><a href="/userarea/dashboard">Home</a></li>
+         <li><a href="/userarea/userguide">User's Guide</a></li>
+       
+        
+          <li><a href="/userarea/editAccount">Edit My Profile</a></li>
+        <li> <a href="/userarea/mysetting">Change Password</a></li>
+        <li><a href="/userarea/myagents">My users</a></li>
+    
+    
+          
+           <li><a href="/userarea/mysetting">Change Password</a></li>
+      </li>
+ 
+      
+    <li><a href="/userarea/paymentoptions">payment history</a></li> 
+      <li><a href="/userarea/approvedpayment">File Online Application</a></li>
+      <li><a href="/userarea/RequestStatus">Online Request History</a></li>
+       <li>   
+       
+       </li> 
+      
+        </ul>
+      </div>
+    </div>
+
+   
+   
+   
+   <table width="100%" border="0" cellspacing="0" cellpadding="4" align="left">
+                          
+                         
+                         
+                          <tr>
+                            <td align="left"></td>
+                          </tr>
+                          <tr>
+                            <td><table width="100%" border="0" cellspacing="0" cellpadding="4" align="left">
+                          
+                         
+                          <tr>
+                            <td align="left">&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td align="left"><strong class="menuText"  style="color:#060;font-size:14px;">Trademarks  Fees Schedule Information<br>
+                              <br>
+                            </strong></td>
+                          </tr>
+                          <tr>
+                            <td><table width="100%" border="0" cellspacing="0" cellpadding="2">
+                              <tr>
+                                <td width="10"></td>
+                                <td>
+                                
+                                <div class="formatDiv">
+                                <table width="100%" border="0" cellspacing="1" cellpadding="2">
+                                <tr align="center">
+                                    <td width="78" height="29">&nbsp;&nbsp;<strong>SN</strong></td>
+                                    <td width="110"><strong>&nbsp;PAYMENT CODE</strong></td>
+                                <td width="415">&nbsp;&nbsp;&nbsp;<strong>FEE DESCRIPTION</strong></td>
+                                  <td width="200"   align="center"><strong>SERVICE FEES</strong></td>
+                                  <td width="200" align="center"><strong>TOTAL AMOUNT </strong></td>                                </tr>
+                                <tr  height="35px"> 
+                                  <td>&nbsp;&nbsp;1</td>
+                                  <td>&nbsp;&nbsp;T001</td>
+                                  <td>&nbsp;T001 (Trademark/ Patent - Availability search)</td>
+                                  
+                                   <td align="center">&nbsp;&nbsp;NGN 1,000.00</td>
+                                 
+                                  <td align="center">&nbsp;&nbsp;NGN 2,500.00</td>
+                                 </tr>
+                                <tr  height="35px"> 
+                                  <td>&nbsp;&nbsp;2</td>
+                                  <td>&nbsp;&nbsp;T002</td>
+                                  <td>&nbsp;T002 (Registration of Trade/Service Mark)</td>
+                                  
+                                   <td align="center">&nbsp;&nbsp;NGN 1,500.00</td>
+                                 
+                                  <td align="center">&nbsp;&nbsp;NGN 16,500.00</td>
+                                 </tr>
+                                <tr  height="35px"> 
+                                  <td>&nbsp;&nbsp;3</td>
+                                  <td>&nbsp;&nbsp;T003</td>
+                                  <td>&nbsp;T003 (Certificate of Reg. of Trade/Service Mark)</td>
+                                  
+                                   <td align="center">&nbsp;&nbsp;NGN 1,500.00</td>
+                                 
+                                  <td align="center">&nbsp;&nbsp;NGN 11,500.00</td>
+                                 </tr>
+                                <tr  height="35px"> 
+                                  <td>&nbsp;&nbsp;4</td>
+                                  <td>&nbsp;&nbsp;T004</td>
+                                  <td>&nbsp;T004 (Notice of Trademark Opposition)</td>
+                                  
+                                   <td align="center">&nbsp;&nbsp;NGN 2,900.00</td>
+                                 
+                                  <td align="center">&nbsp;&nbsp;NGN 10,900.00</td>
+                                 </tr>
+                                <tr  height="35px"> 
+                                  <td>&nbsp;&nbsp;5</td>
+                                  <td>&nbsp;&nbsp;T005</td>
+                                  <td>&nbsp;T005 (Counter-Statement)</td>
+                                  
+                                   <td align="center">&nbsp;&nbsp;NGN 2,900.00</td>
+                                 
+                                  <td align="center">&nbsp;&nbsp;NGN 10,900.00</td>
+                                 </tr>
+                                <tr  height="35px"> 
+                                  <td>&nbsp;&nbsp;6</td>
+                                  <td>&nbsp;&nbsp;T006</td>
+                                  <td>&nbsp;T006 (Statutory Declaration)</td>
+                                  
+                                   <td align="center">&nbsp;&nbsp;NGN 2,900.00</td>
+                                 
+                                  <td align="center">&nbsp;&nbsp;NGN 10,900.00</td>
+                                 </tr>
+                                <tr  height="35px"> 
+                                  <td>&nbsp;&nbsp;7</td>
+                                  <td>&nbsp;&nbsp;T007</td>
+                                  <td>&nbsp;T007 (Preliminary Opposition (Hearing/Security)</td>
+                                  
+                                   <td align="center">&nbsp;&nbsp;NGN 2,900.00</td>
+                                 
+                                  <td align="center">&nbsp;&nbsp;NGN 12,900.00</td>
+                                 </tr>
+                                <tr  height="35px"> 
+                                  <td>&nbsp;&nbsp;8</td>
+                                  <td>&nbsp;&nbsp;T008</td>
+                                  <td>&nbsp;T008 (Changes in registered particulars)</td>
+                                  
+                                   <td align="center">&nbsp;&nbsp;NGN 2,900.00</td>
+                                 
+                                  <td align="center">&nbsp;&nbsp;NGN 10,900.00</td>
+                                 </tr>
+                                <tr  height="35px"> 
+                                  <td>&nbsp;&nbsp;9</td>
+                                  <td>&nbsp;&nbsp;T009</td>
+                                  <td>&nbsp;T009 (Renewal of Trade/Service Marks)</td>
+                                  
+                                   <td align="center">&nbsp;&nbsp;NGN 2,900.00</td>
+                                 
+                                  <td align="center">&nbsp;&nbsp;NGN 14,900.00</td>
+                                 </tr>
+                                <tr  height="35px"> 
+                                  <td>&nbsp;&nbsp;10</td>
+                                  <td>&nbsp;&nbsp;T010</td>
+                                  <td>&nbsp;T010 (Penalty for late renewal of Trademark)</td>
+                                  
+                                   <td align="center">&nbsp;&nbsp;NGN 2,900.00</td>
+                                 
+                                  <td align="center">&nbsp;&nbsp;NGN 8,900.00</td>
+                                 </tr>
+                                <tr  height="35px"> 
+                                  <td>&nbsp;&nbsp;11</td>
+                                  <td>&nbsp;&nbsp;T011</td>
+                                  <td>&nbsp;T011 (Certified True Copy(CTC) or extract of)</td>
+                                  
+                                   <td align="center">&nbsp;&nbsp;NGN 2,900.00</td>
+                                 
+                                  <td align="center">&nbsp;&nbsp;NGN 10,900.00</td>
+                                 </tr>
+                                <tr  height="35px"> 
+                                  <td>&nbsp;&nbsp;12</td>
+                                  <td>&nbsp;&nbsp;T012</td>
+                                  <td>&nbsp;T012 (Certified true copy renewal certificate)</td>
+                                  
+                                   <td align="center">&nbsp;&nbsp;NGN 2,900.00</td>
+                                 
+                                  <td align="center">&nbsp;&nbsp;NGN 10,900.00</td>
+                                 </tr>
+                                <tr  height="35px"> 
+                                  <td>&nbsp;&nbsp;13</td>
+                                  <td>&nbsp;&nbsp;T013</td>
+                                  <td>&nbsp;T013 (CTC of every other form or document)</td>
+                                  
+                                   <td align="center">&nbsp;&nbsp;NGN 2,400.00</td>
+                                 
+                                  <td align="center">&nbsp;&nbsp;NGN 6,400.00</td>
+                                 </tr>
+                                <tr  height="35px"> 
+                                  <td>&nbsp;&nbsp;14</td>
+                                  <td>&nbsp;&nbsp;T014</td>
+                                  <td>&nbsp;T014 (Merger/ Assignment on prescribed period)</td>
+                                  
+                                   <td align="center">&nbsp;&nbsp;NGN 2,900.00</td>
+                                 
+                                  <td align="center">&nbsp;&nbsp;NGN 17,900.00</td>
+                                 </tr>
+                                <tr  height="35px"> 
+                                  <td>&nbsp;&nbsp;15</td>
+                                  <td>&nbsp;&nbsp;T015</td>
+                                  <td>&nbsp;T015 (Penalty on late Reg. of Assigmnt of trade)</td>
+                                  
+                                   <td align="center">&nbsp;&nbsp;NGN 2,900.00</td>
+                                 
+                                  <td align="center">&nbsp;&nbsp;NGN 8,900.00</td>
+                                 </tr>
+                                <tr  height="35px"> 
+                                  <td>&nbsp;&nbsp;16</td>
+                                  <td>&nbsp;&nbsp;T016</td>
+                                  <td>&nbsp;T016 (Dir. From Registrar for Advertisement)</td>
+                                  
+                                   <td align="center">&nbsp;&nbsp;NGN 1,200.00</td>
+                                 
+                                  <td align="center">&nbsp;&nbsp;NGN 6,200.00</td>
+                                 </tr>
+                                <tr  height="35px"> 
+                                  <td>&nbsp;&nbsp;17</td>
+                                  <td>&nbsp;&nbsp;T017</td>
+                                  <td>&nbsp;T017 (Reg. of registered User of Trademark)</td>
+                                  
+                                   <td align="center">&nbsp;&nbsp;NGN 2,900.00</td>
+                                 
+                                  <td align="center">&nbsp;&nbsp;NGN 17,900.00</td>
+                                 </tr>
+                                <tr  height="35px"> 
+                                  <td>&nbsp;&nbsp;18</td>
+                                  <td>&nbsp;&nbsp;T018</td>
+                                  <td>&nbsp;T018 (Cancellation of registered user of T/mark)</td>
+                                  
+                                   <td align="center">&nbsp;&nbsp;NGN 2,900.00</td>
+                                 
+                                  <td align="center">&nbsp;&nbsp;NGN 10,900.00</td>
+                                 </tr>
+                                <tr  height="35px"> 
+                                  <td>&nbsp;&nbsp;19</td>
+                                  <td>&nbsp;&nbsp;T019</td>
+                                  <td>&nbsp;T019 (Reclassification of Trademark)</td>
+                                  
+                                   <td align="center">&nbsp;&nbsp;NGN 2,900.00</td>
+                                 
+                                  <td align="center">&nbsp;&nbsp;NGN 17,900.00</td>
+                                 </tr>
+                                <tr  height="35px"> 
+                                  <td>&nbsp;&nbsp;20</td>
+                                  <td>&nbsp;&nbsp;T020</td>
+                                  <td>&nbsp;T020 ( Intervene in rectification proceeding)</td>
+                                  
+                                   <td align="center">&nbsp;&nbsp;NGN 2,600.00</td>
+                                 
+                                  <td align="center">&nbsp;&nbsp;NGN 22,600.00</td>
+                                 </tr>
+                                <tr  height="35px"> 
+                                  <td>&nbsp;&nbsp;21</td>
+                                  <td>&nbsp;&nbsp;T021</td>
+                                  <td>&nbsp;T021 (Rectification for Trademark)</td>
+                                  
+                                   <td align="center">&nbsp;&nbsp;NGN 2,900.00</td>
+                                 
+                                  <td align="center">&nbsp;&nbsp;NGN 10,900.00</td>
+                                 </tr>
+                                <tr  height="35px"> 
+                                  <td>&nbsp;&nbsp;22</td>
+                                  <td>&nbsp;&nbsp;T022</td>
+                                  <td>&nbsp;T022 (leave to correct/add to registered T/mark)</td>
+                                  
+                                   <td align="center">&nbsp;&nbsp;NGN 2,200.00</td>
+                                 
+                                  <td align="center">&nbsp;&nbsp;NGN 12,200.00</td>
+                                 </tr>
+                                <tr  height="35px"> 
+                                  <td>&nbsp;&nbsp;23</td>
+                                  <td>&nbsp;&nbsp;T023</td>
+                                  <td>&nbsp;T023 (Restoration of Trade/Service Mark)</td>
+                                  
+                                   <td align="center">&nbsp;&nbsp;NGN 2,900.00</td>
+                                 
+                                  <td align="center">&nbsp;&nbsp;NGN 12,900.00</td>
+                                 </tr>
+                                <tr  height="35px"> 
+                                  <td>&nbsp;&nbsp;24</td>
+                                  <td>&nbsp;&nbsp;T024</td>
+                                  <td>&nbsp;T024 (Service in compliance W O statutory Forms)</td>
+                                  
+                                   <td align="center">&nbsp;&nbsp;NGN 2,200.00</td>
+                                 
+                                  <td align="center">&nbsp;&nbsp;NGN 7,200.00</td>
+                                 </tr>
+                                <tr  height="35px"> 
+                                  <td>&nbsp;&nbsp;25</td>
+                                  <td>&nbsp;&nbsp;T025</td>
+                                  <td>&nbsp;T025 (Trademark/Designs/Patent Temporary file)</td>
+                                  
+                                   <td align="center">&nbsp;&nbsp;NGN 1,000.00</td>
+                                 
+                                  <td align="center">&nbsp;&nbsp;NGN 2,000.00</td>
+                                 </tr>
+                                <tr  height="35px"> 
+                                  <td>&nbsp;&nbsp;26</td>
+                                  <td>&nbsp;&nbsp;T026</td>
+                                  <td>&nbsp;T026 (Trademark extention of time)</td>
+                                  
+                                   <td align="center">&nbsp;&nbsp;NGN 2,900.00</td>
+                                 
+                                  <td align="center">&nbsp;&nbsp;NGN 12,900.00</td>
+                                 </tr>
+                                <tr  height="35px"> 
+                                  <td>&nbsp;&nbsp;27</td>
+                                  <td>&nbsp;&nbsp;T027</td>
+                                  <td>&nbsp;T027 (Extract of trademark application status)</td>
+                                  
+                                   <td align="center">&nbsp;&nbsp;NGN 2,900.00</td>
+                                 
+                                  <td align="center">&nbsp;&nbsp;NGN 8,900.00</td>
+                                 </tr>
+                                <tr  height="35px"> 
+                                  <td>&nbsp;&nbsp;28</td>
+                                  <td>&nbsp;&nbsp;T028</td>
+                                  <td>&nbsp;Request for preliminary advice</td>
+                                  
+                                   <td align="center">&nbsp;&nbsp;NGN 1,600.00</td>
+                                 
+                                  <td align="center">&nbsp;&nbsp;NGN 3,100.00</td>
+                                 </tr>
+                                <tr  height="35px"> 
+                                  <td>&nbsp;&nbsp;29</td>
+                                  <td>&nbsp;&nbsp;T029</td>
+                                  <td>&nbsp;Registration fee with existing search application</td>
+                                  
+                                   <td align="center">&nbsp;&nbsp;NGN 3,500.00</td>
+                                 
+                                  <td align="center">&nbsp;&nbsp;NGN 17,000.00</td>
+                                 </tr>
+                              
+                                </table>
+                                </div>
+                                </td>
+                                <td width="10">&nbsp;</td>
+                              </tr>
+                            </table></td>
+                          </tr>
+                          
+                                                    
+                          <tr>
+                            <td><table width="100%" border="0" cellspacing="0" cellpadding="2">
+                              
+                            </table></td>
+                          </tr>
+                          
+                        </table></td>
+                      </tr>
+                      
+                          <tr>
+                            <td align="left">&nbsp;</td>
+                          </tr>
+                          
+                                                    
+                          <tr>
+                            <td><table width="100%" border="0" cellspacing="0" cellpadding="2">
+                              
+                            </table></td>
+                          </tr>
+                          
+                        </table>
+                        
+                        
+                        
+   
+    
+
+    </p>
+  </div>
+  
+  </div>
+  
+  
+
+<!--/wrapper--><!--/content-->
+
+
+<div class="footer">
+  <div class="wrapper">
+    <a href="" class="accredited">Get Accredited</a>
+    
+    <div class="footnote">
+      <div class="left">
+        <ul>
+          <li><a href="/pages/129?related=129">About IPO NIGERIA</a></li>
+          <li><a href="/pages/139?related=139">Terms & Conditions</a></li>
+          <li><a href="/pages/138?related=138">Privacy Policy</a></li>
+          
+        </ul>
+      </div>
+     
+      <div class="right">
+
+        <p>The Commercial Law Department, Trademarks Patents and Designs Registry, Ministry of Trade and Investment</p>
+      </div>
+  
+      <div class="right" align="right"> <br />
+
+        <p> </p>
+      </div>
+    </div>
+  </div>
+</div>
+ <!--/footer-->
+
+
+</body>
+</html> 

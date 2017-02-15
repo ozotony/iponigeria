@@ -1,0 +1,181 @@
+/* =Common styles
+---------------------------------------- */
+
+.home-animate {
+	position:relative;
+	width:984px;
+	height:242px;
+	overflow:hidden;
+	margin:0;
+	padding:0;
+	}
+	.home-animate-item {
+		background:none;
+		list-style-type:none;
+		margin:0;
+		padding:0;
+		position:absolute;
+		}
+
+
+
+.home-map {
+	background:url(home_animation_04.png) no-repeat 0 0;
+	margin:-147px 0 0;
+	position:relative;
+	zoom:1;
+	}
+	.home-map-image {
+		border:0;
+		}
+
+
+
+
+/* =Tooltips
+---------------------------------------- */
+.home-map-tooltips {
+	position:absolute;
+	}
+	.people-tooltip {
+		position:absolute;
+		line-height:1.4em;
+		text-align:center;
+		font-size:12px;
+		color:#fff;
+		width:0;
+		height:0;
+
+		text-shadow:1px 1px 1px rgba(255,255,255,0.3);
+		}
+		.people-tooltip-i {
+			position:absolute;
+			bottom:0;
+			}
+			.p-tooltip-content {
+				width:78px;
+				padding:6px 8px;
+				}
+			.people-tooltip .beak {
+				position:absolute;
+				overflow:hidden;
+				}
+				.people-tooltip .beak i {
+					background:url(/res/images/animation/tooltip_beaks.png) no-repeat 0 100%;
+					position:absolute;
+					width:17px;
+					height:140px;
+					left:0;
+					top:0;
+					}
+		.people-tooltip-left {
+			right:0;
+
+			-webkit-border-radius:11px 11px 0 11px;
+			   -moz-border-radius:11px 11px 0 11px;
+					border-radius:11px 11px 0 11px;
+			}
+		.people-tooltip-right {
+			left:0;
+
+			-webkit-border-radius:11px 11px 11px 0;
+			   -moz-border-radius:11px 11px 11px 0;
+					border-radius:11px 11px 11px 0;
+			}
+/* Green */
+#people1-tooltip {
+	left:111px;
+	top:111px;
+	}
+	#people1-tooltip .people-tooltip-i {
+		background:#00a651;
+		border:1px solid #23b269;
+		}
+	#people1-tooltip .beak {
+		width:15px;
+		height:25px;
+		right:-3px;
+		bottom:-17px;
+		}
+
+/* Orange */
+#people2-tooltip {
+	left:295px;
+	top:110px;
+	}
+	#people2-tooltip .people-tooltip-i {
+		background:#f1592a;
+		border:1px solid #f48664;
+		}
+	#people2-tooltip .beak {
+		width:17px;
+		height:27px;
+		left:-4px;
+		bottom:-19px;
+		}
+		#people2-tooltip .beak i {top:-26px}
+
+/* Blue */
+#people3-tooltip {
+	left:450px;
+	top:98px;
+	}
+	#people3-tooltip .people-tooltip-i {
+		background:#4e80c2;
+		border:1px solid #87a9d6;
+		}
+	#people3-tooltip .beak {
+		width:16px;
+		height:29px;
+		left:-5px;
+		bottom:-19px;
+		}
+		#people3-tooltip .beak i {top:-54px}
+
+/* Purple */
+#people4-tooltip {
+	left:698px;
+	top:106px;
+	}
+	#people4-tooltip .people-tooltip-i {
+		background:#5a479d;
+		border:1px solid #897bb9;
+		}
+	#people4-tooltip .beak {
+		width:16px;
+		height:27px;
+		right:-5px;
+		bottom:-19px;
+		}
+		#people4-tooltip .beak i {top:-84px}
+
+/* Red */
+#people5-tooltip {
+	left:837px;
+	top:113px;
+	}
+	#people5-tooltip .people-tooltip-i {
+		background:#df1d38;
+		border:1px solid #ea6d7f;
+		}
+	#people5-tooltip .beak {
+		width:16px;
+		height:27px;
+		left:-4px;
+		bottom:-18px;
+		}
+		#people5-tooltip .beak i {top:-112px}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
