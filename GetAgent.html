@@ -1,7 +1,7 @@
 ﻿
 <link href="stylesheets/bootstrap.min.css" rel="stylesheet" />
 <link href="stylesheets/main.css?084178A6C622C32B308BDD803C4BBE13" media="all" rel="stylesheet" type="text/css" />
-<script src="javascripts/bootstrap.min.js"></script>
+
 
 <style>
     .has-error .help-block, .has-error .control-label, .has-error .radio, .has-error .checkbox, .has-error .radio-inline, .has-error .checkbox-inline {
@@ -37,6 +37,23 @@
   }
 </style>
 
+<style type="text/css">
+    @media print {
+
+        .no-print, .no-print * {
+            display: none !important;
+        }
+    }
+</style>
+
+
+<script>
+
+    function printAll() {
+
+        window.print();
+    }
+</script>
 
 
 <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
@@ -216,6 +233,8 @@
                                                                                                         </tr>
                                                                                                     </tfoot>
                                                                                                 </table>
+
+                                                                                                <input type="button" name="Printform" id="Printform"  style="margin:auto;display:block;" value="Print" onclick="printAll(); return false" class="button no-print" />
 
                                                                                             </div>
                                                                                         </div>
@@ -431,7 +450,7 @@
                     </td>
                 </tr>
 
-                <tr>
+                <tr  class="no-print">
                     <td align="center" class="footer_bgrd">
                         <table width="1027" border="0" cellspacing="0" cellpadding="0">
                             <tr>

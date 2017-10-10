@@ -1292,7 +1292,7 @@ app.controller('myController6', function ($scope, $http, $rootScope, $routeParam
          //   url: 'http://localhost:4556/Handlers/GetRegistration2.ashx'
         }).success(function (data, status, headers, config) {
             var dd = data;
-            $scope.itemsByPage = 10;
+            $scope.itemsByPage = 100;
             $scope.ListAgent = data;
             $scope.displayedCollection = [].concat($scope.ListAgent);
         }).error(function (data, status, headers, config) {
